@@ -1,0 +1,31 @@
+{
+	"geographical": [{
+		"label": "Clave",
+		"value": "001"
+	}, {
+		"label": "Municipio",
+		"value": "Aguascalientes"
+	}, {
+		"label": "Clave_ent",
+		"value": "01"
+	}, {
+		"label": "Entidad",
+		"value": "Aguascalientes"
+	}, {
+		"label": "cvegeo",
+		"value": "01001"
+	}],
+	"economical": [{
+		"label": "gob_rh_pap_hom_rc_base",
+		"value": -6
+	}, {
+		"label": "gob_rh",
+		"value": -6
+	}, {
+		"label": "gob_rh_papm",
+		"value": 7710
+	}, {
+		"label": "gob_rh_papm_hom",
+		"value": 5443
+	}]
+}

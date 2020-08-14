@@ -1,0 +1,54 @@
+.graph-btn{
+	float: left;
+	width:50px;
+	height:50px;
+	background-image:url(graph_btn.png);
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+#floatGraph{
+	z-index: 10000;
+    background-color: #FFF;
+    position: absolute;
+    left: 8px;
+    bottom: 30px;
+    width: 395px;
+    height: 276px;
+	overflow:hidden;
+	
+	padding: 10px 10px 10px 10px;
+	
+	-webkit-box-shadow: 1px 1px 5px 1px #616161;
+	box-shadow: 1px 1px 5px 1px #616161;
+	
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#floatGraph div{
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+		
+}
+
+#floatGraph_close{
+	position: absolute;
+    right: 8px;
+    top: 7px;		
+	cursor:pointer;
+	z-index:100;
+}
+
+.floatGraph-container{
+	width: 375px;
+    height: 276px;	
+}

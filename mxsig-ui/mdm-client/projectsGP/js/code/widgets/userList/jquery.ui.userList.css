@@ -1,0 +1,236 @@
+@import url("dotted.css");
+@import url("widget_userList.css");
+@import url("userList-effects.css");
+/* img background */
+.userList-bg-move{background:url("move.png") bottom right no-repeat; }
+
+.cw-boxBorder{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.cw-shadow{
+	-webkit-box-shadow: 1px 1px 4px 1px #808080;
+	box-shadow: 1px 1px 4px 1px #808080;	
+}
+
+.custom-userList{
+    /*position: absolute;*/
+	width: 275px;
+	background-color: #FFF;
+	color: #000;
+	text-align: center;
+	font-size:100%;
+}
+
+
+/*sprites*/
+.userList-sprite{background-image: url(sprite.png);background-repeat: no-repeat;}
+
+/*----------------------*/
+.userList-shadow{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+}
+
+.userList-shadow-inset{
+   -moz-box-shadow: inset 1px 1px 2px 0px #999;
+   -webkit-box-shadow: inset 1px 1px 2px 0px #999;
+   box-shadow: inset 1px 1px 2px 0px #999;
+}
+.userList-boxsize{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+   
+   /* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555');
+}
+.userList-transition{
+    webkit-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -o-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -moz-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -ms-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -kthtml-transition: all 0.4s lcubic-bezier(0.52,0,0.48,1);
+    transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+}
+/*Widget*/
+.userList-item{
+	display:inline-block;
+	min-height: 55px;
+	width:100%;
+	float:left;
+}
+.userList-item-chain-content{
+	display:inline-block;
+	float: left;
+	width: 17px;
+	height: 100%;
+	overflow:hidden;
+}
+.userList-item-body:not(.ui-draggable-dragging){
+	webkit-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -o-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -moz-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -ms-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -kthtml-transition: all 0.4s lcubic-bezier(0.52,0,0.48,1);
+    transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+}
+.userList-item-body{
+	display:inline-block;
+	width: 228px;
+	min-height: 50px;
+	margin-top: 4px;
+	margin-bottom: 2px;
+	padding-left: 19px;
+	float: left;
+}
+.userList-item-body:hover{
+	min-height:62px;
+	margin-top: 6px;
+}
+.userList-dropArea .userList-item-content{
+	border: 1px dotted #FAFA23 ;	
+	
+	box-shadow: 0px 0px 1px 2px #DADA05 !important;
+   -webkit-box-shadow: 0px 0px 1px 2px #DADA05 !important;
+   -moz-box-shadow: 0px 0px 1px 2px #DADA05 !important;
+   -ms-box-shadow: 0px 0px 1px 2px #DADA05 !important;
+   -o-box-shadow: 0px 0px 1px 2px #DADA05 !important;
+}
+.userList-over-dropArea .userList-item-info{
+	background-color:#FDF9AC !important;
+}
+
+.draggable .userList-item-content{
+	cursor:move;
+}
+
+.userList-item-content{
+	border:1px solid #CCC;
+	min-height:60px;
+	background-color:#FFF;
+	overflow:hidden;
+	
+	border-radius: 3px 0px 0px 3px;
+    -webkit-border-radius: 3px 0px 0px 3px;
+    -moz-border-radius: 3px 0px 0px 3px;
+    -ms-border-radius: 3px 0px 0px 3px;
+    -o-border-radius: 3px 0px 0px 3px;
+	
+	box-shadow: 0px 0px 1px 0px #8E908E;
+   -webkit-box-shadow: 0px 0px 1px 0px #8E908E;
+   -moz-box-shadow: 0px 0px 1px 0px #8E908E;
+   -ms-box-shadow: 0px 0px 1px 0px #8E908E;
+   -o-box-shadow: 0px 0px 1px 0px #8E908E;
+}
+.userList-item-content:hover{
+	box-shadow: 0px 3px 8px 0px #000000;
+  -webkit-box-shadow: 0px 3px 8px 0px #000000;
+  -moz-box-shadow: 0px 3px 8px 0px #000000;
+  -ms-box-shadow: 0px 3px 8px 0px #000000;
+  -o-box-shadow: 0px 3px 8px 0px #000000;
+}
+.userList-item-color{
+	width: 10px;
+	height: 63px;
+	float: left;
+	background-color:transparent;
+}
+.userList-item-color:hover{
+	border:2px solid #FFF;	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.userList-item-info{
+	width: 195px;
+	padding: 2px;
+	background-color: #FFF;
+	float: left;
+}
+.userList-item-name{
+	float: left;
+	font-size: 85%;
+	width: 125px;
+	text-align:left;
+	padding-left:2px;
+	font-weight:bold;
+	padding-top: 3px;
+}
+.userList-changename{
+	float:left;	
+	cursor:pointer;
+}
+.userList-changename:hover{
+	background-color:#FCDC7C;
+}
+.userList-item-tools{
+	float: right;
+	width: 62px;	
+}
+.userList-btn{
+  cursor:pointer;	
+}
+.userList-item-tools .userList-btn{
+	float:right;
+	cursor:pointer;
+}
+.userList-item-content-middle{
+	float:left;
+	width:170px;
+	padding-top:5px;	
+}
+.userList-item-charge{
+	text-align:right;
+	font-size:90%;
+	padding-left:2px;
+	float:right;	
+}
+.userList-item-userName{
+	text-align:left;
+	font-size:90%;
+	padding-left:2px;
+	float:left;	
+}
+.userList-item-content-bottom{
+	float: left;
+	padding-bottom: 12px;
+	height: 14px;
+	width: 180px;
+	padding-top: 6px;
+}
+.userList-item-progress-container{
+	/*position:absolute;	*/
+}
+.userList-item-progress{
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	width: 170px;
+	height: 5px;
+	overflow: hidden;
+	
+	border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.userList-progress-value{
+	/*position: absolute;*/
+	height: 3px;	
+}
+.userList-item-edit{
+ 	float:left;
+	margin-top:18px;
+	margin-left:4px;
+	cursor:pointer;
+}
+#selectname_selector{
+	font-size: 33px;
+    text-align: right;
+    width: 233px;
+}

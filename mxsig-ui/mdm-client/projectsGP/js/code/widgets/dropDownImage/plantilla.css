@@ -1,0 +1,14 @@
+.dropDownImage-plantilla{ background:url("plantilla.png") top left no-repeat; }
+.dropDownImage-rem-poly{ width:45px; height:45px; background-position:-10px -10px; }
+.dropDownImage-rem-poly:hover{ width:45px; height:45px; background-position:-10px -65px; }
+.dropDownImage-rem-square{ width:45px; height:45px; background-position:-10px -120px; }
+.dropDownImage-rem-square:hover{ width:45px; height:45px; background-position:-10px -175px; }
+.dropDownImage-rem-point{ width:45px; height:45px; background-position:-10px -230px; }
+.dropDownImage-rem-point:hover{ width:45px; height:45px; background-position:-10px -285px; }
+.dropDownImage-add-poly{ width:45px; height:45px; background-position:-10px -340px; }
+.dropDownImage-add-poly:hover{ width:45px; height:45px; background-position:-10px -395px; }
+.dropDownImage-add-square{ width:45px; height:45px; background-position:-10px -450px; }
+.dropDownImage-add-square:hover{ width:45px; height:45px; background-position:-10px -505px; }
+.dropDownImage-add-point{ width:45px; height:45px; background-position:-10px -560px; }
+.dropDownImage-add-point:hover{ width:45px; height:45px; background-position:-10px -615px; }
+

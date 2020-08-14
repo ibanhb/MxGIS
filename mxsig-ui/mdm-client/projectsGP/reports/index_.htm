@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highmaps Example</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+#container {
+    height: 500px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+		</style>
+		<script type="text/javascript">
+$(function () {
+
+    // Prepare random data
+	var edos = {
+							'01':'Aguascalientes',
+							'02':'Tijuana',
+							'03':'La Paz',
+							'04':'San Francisco de Campeche',
+							'05':'(A.M.) Torreón',
+							'06':'Colima',
+							'07':'Tuxtla Gutiérrez',
+							'08':'Chihuahua',
+							'09':'Cuauhtémoc',
+							'10':'Victoria de Durango',
+							'11':'León de los Aldama',
+							'12':'Acapulco de Juárez',
+							'13':'Pachuca de Soto',
+							'14':'(A.M.) Guadalajara',
+							'15':'Ciudad Nezahualcóyotl',
+							'16':'Morelia',
+							'17':'(A.M.) Cuernavaca',
+							'18':'Tepic',
+							'19':'(A.M.) Monterrey',
+							'20':'Oaxaca de Juárez',
+							'21':'Heroica Puebla de Zaragoza',
+							'22':'(A.M.) Querétaro',
+							'23':'Cancún',
+							'24':'San Luis Potosí',
+							'25':'Culiacán Rosales',
+							'26':'Hermosillo',
+							'27':'Villahermosa',
+							'28':'Nuevo Laredo',
+							'29':'Tlaxcala de Xicohténcatl',
+							'30':'(A.M.) Veracruz',
+							'31':'Mérida',
+							'32':'(A.M.) Zacatecas'
+				}
+	var data = [];
+	for (var x in edos){
+		data.push({"code":x,value:Math.random()*1000+1,name:edos[x]})
+	}
+
+    $.getJSON('mx_edos.geojson', function (geojson) {
+
+        // Initiate the chart
+        $('#container').highcharts('Map', {
+
+            title : {
+                text : 'GeoJSON in Highmaps'
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+            },
+
+            series : [{
+                data : data,
+                mapData: geojson,
+                joinBy: ['CVE_ENT', 'code'],
+                name: 'Avance',
+                states: {
+                    hover: {
+                        color: '#BADA55'
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.properties.CVE_ENT}'
+                },
+				tooltip: {
+							pointFormat: '{point.options.name}:{point.value}'
+				},
+				point: {
+						events: {
+							click: function(status){
+									debugger;
+									obj.printCities(status.currentTarget.code);
+								}
+						}
+				}
+            }]
+        });
+    });
+});
+		</script>
+	</head>
+	<body>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+
+
+<div id="container" style="min-width: 310px; max-width: 400px"></div>
+
+	</body>
+</html>

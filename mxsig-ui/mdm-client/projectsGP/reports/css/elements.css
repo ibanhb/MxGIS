@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* Size */
+.small{
+	font-size:80%;	
+}
+.big{
+	font-size:120%;	
+}
+.big2{
+	font-size:150%;	
+}
+.italic{
+	font-style:italic;
+}
+/* ----------------Float ----------------------*/
+.float-left{
+	float:left;
+}
+.float-right{
+	float:right;
+}
+/*-------------Width----------------------------*/
+.width-full{
+	width:100%;
+}
+.width-middle{
+	width:50%;
+}
+/*-------------Margins and Padding--------------*/
+.padding-5{
+	padding:5px;
+}
+.padding{
+	padding:5px;
+}
+.padding-bottom{
+	padding-bottom:5px;
+}
+.padding-top{
+	padding-top:5px;
+}
+.padding-left{
+	padding-left:5px;
+}
+.padding-right{
+	padding-right:5px;
+}
+
+
+.margin-5{
+	margin:5px;
+}
+.margin{
+	margin:5px;
+}
+.margin-top{
+	margin-top:5px;
+}
+.margin-bottom{
+	margin-bottom:5px;
+}
+.margin-left{
+	margin-left:5px;
+}
+.margin-right{
+	margin-right:5px;
+}
+/*-------------Hide---------------------------*/
+/*-------------Overlow---------------------------*/
+.overflow-hide{
+	overflow:hidden !important;	
+}
+/*clear----------------------------------------*/
+.clear-right{
+	clear:right;
+}
+.clear-left{
+	clear:left;
+}
+.clear-both{
+	clear:both;
+}
+

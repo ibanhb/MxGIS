@@ -1,0 +1,48 @@
+.cw-boxBorder{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.cw-shadow{
+	-webkit-box-shadow: 1px 1px 4px 1px #808080;
+	box-shadow: 1px 1px 4px 1px #808080;	
+}
+.custom-inputNumber{
+	text-align: right;
+	padding:3px;
+}
+
+
+/*sprites*/
+.inputNumber-sprite{background-image: url(sprite.png);background-repeat: no-repeat;}
+
+/*----------------------*/
+.inputNumber-shadow{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+}
+
+.inputNumber-shadow-inset{
+   -moz-box-shadow: inset 1px 1px 2px 0px #999;
+   -webkit-box-shadow: inset 1px 1px 2px 0px #999;
+   box-shadow: inset 1px 1px 2px 0px #999;
+}
+.inputNumber-boxsize{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+   
+   /* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555');
+}
+.inputNumber-transition{
+    webkit-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -o-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -moz-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -ms-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -kthtml-transition: all 0.4s lcubic-bezier(0.52,0,0.48,1);
+    transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+}

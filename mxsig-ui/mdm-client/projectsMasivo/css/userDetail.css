@@ -1,0 +1,88 @@
+/*User details ----------------------------------------------------*/
+.mdmp-userDetail-container{
+	font-size: 135%;	
+}
+.mdmp-userDetail-title{
+	font-size: 115%;
+	font-weight: bold;
+	width: 100%;
+	float: left;	
+}
+.mdmp-userDetail-title *{
+	float:left;	
+}
+.mdmp-userDetail-title label{
+	margin-top:8px;
+	margin-left:3px;	
+}
+.mdmp-userDetail-hrad-charge{
+	float:right !important;
+}
+.mdmp-userDetail-graph{
+	width: 100%;
+	float: left;
+	height: 220px;	
+}
+.mdmp-userDetail-tools{
+	width: 100%;
+	float: left;	
+}
+.mdmp-userDetail-subs{
+	width: 100%;
+	float: left;	
+}
+.mdmp-userDetail-item{
+	width: 100%;
+	float: left;
+	border: 1px solid #DDD;
+	padding: 2px;
+	margin-top: 4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.mdmp-userDetail-item label{
+	margin-top: 7px;		
+}
+.mdmp_plantilla_userDetail_username{
+	margin-left:4px;
+	float:left;	
+}
+.mdmp_plantilla_userDetail_charge{
+	margin-right:4px;
+	float:right;	
+}
+
+.mdmp-userDetail-item .mdmp_plantilla_btn{
+	float:right;	
+}
+
+.mdmp-userDetail-item-color{
+	float:left;
+	width: 17px;
+	height: 18px;
+	margin-top: 6px;	
+}
+.mdmp_plantilla_btn{
+	cursor:pointer;	
+}
+.mdmp-userDetail-subsIcon{
+	float:left;
+	clear:right;	
+}
+.mdmp-userDetail-subsArea{
+	float: left;
+	border: 1px solid #EEE;
+	padding: 2px;
+	width:100%;
+}
+
+.mdmp-userDetail-subsArea div{
+	float:left;	
+}
+.mdmp_plantilla_userGroup_title{
+	margin-left:4px;
+	margin-top:10px;
+	float:left;		
+}

@@ -1,0 +1,36 @@
+.bo_plantilla{ background:url("plantilla.png") top left no-repeat; }
+.bo_icon_big_way{ width:60px; height:60px; background-position:-10px -10px; }
+.bo_icon_big_res:hover{ width:60px; height:60px; background-position:-10px -80px; }
+.bo_icon_big_tur:hover{ width:60px; height:60px; background-position:-10px -150px; }
+.bo_icon_big_gob:hover{ width:60px; height:60px; background-position:-10px -220px; }
+.bo_icon_big_elec:hover{ width:60px; height:60px; background-position:-10px -290px; }
+.bo_icon_big_bus:hover{ width:60px; height:60px; background-position:-10px -360px; }
+.bo_icon_big_ship:hover{ width:60px; height:60px; background-position:-10px -430px; }
+.bo_icon_big_bridge:hover{ width:60px; height:60px; background-position:-10px -500px; }
+.bo_icon_big_way:hover{ width:60px; height:60px; background-position:-10px -570px; }
+.bo_icon_big_gob{ width:60px; height:60px; background-position:-10px -640px; }
+.bo_icon_big_tur{ width:60px; height:60px; background-position:-10px -710px; }
+.bo_icon_big_res{ width:60px; height:60px; background-position:-10px -780px; }
+.bo_icon_big_elec{ width:60px; height:60px; background-position:-10px -850px; }
+.bo_icon_big_bus{ width:60px; height:60px; background-position:-10px -920px; }
+.bo_icon_big_ship{ width:60px; height:60px; background-position:-10px -990px; }
+.bo_icon_big_bridge{ width:60px; height:60px; background-position:-10px -1060px; }
+.bo_icon_med_cal{ width:35px; height:35px; background-position:-10px -1130px; }
+.bo_icon_med_pos{ width:35px; height:35px; background-position:-10px -1175px; }
+.bo_icon_med_gra:hover{ width:35px; height:35px; background-position:-10px -1220px; }
+.bo_icon_med_can:hover{ width:35px; height:35px; background-position:-10px -1265px; }
+.bo_icon_med_ok:hover{ width:35px; height:35px; background-position:-10px -1310px; }
+.bo_icon_med_sea:hover{ width:35px; height:35px; background-position:-10px -1355px; }
+.bo_icon_med_plus:hover{ width:35px; height:35px; background-position:-10px -1400px; }
+.bo_icon_med_cal:hover{ width:35px; height:35px; background-position:-10px -1445px; }
+.bo_icon_med_pos:hover{ width:35px; height:35px; background-position:-10px -1490px; }
+.bo_icon_med_gra{ width:35px; height:35px; background-position:-10px -1535px; }
+.bo_icon_med_can{ width:35px; height:35px; background-position:-10px -1580px; }
+.bo_icon_med_ok{ width:35px; height:35px; background-position:-10px -1625px; }
+.bo_icon_med_sea{ width:35px; height:35px; background-position:-10px -1670px; }
+.bo_icon_med_plus{ width:35px; height:35px; background-position:-10px -1715px; }
+.bo_icon_sho_up{width:25px; height:25px; background-position:-10px -1760px; }
+.bo_icon_sho_down{ width:25px; height:25px; background-position:-45px -1760px; }
+.bo_icon_sho_up:hover{ width:25px; height:25px; background-position:-10px -1795px; }
+.bo_icon_sho_down:hover{ width:25px; height:25px; background-position:-45px -1795px; }
+

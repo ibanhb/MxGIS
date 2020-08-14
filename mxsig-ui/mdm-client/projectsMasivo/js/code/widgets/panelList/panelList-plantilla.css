@@ -1,0 +1,14 @@
+.panelList-plantilla{ background:url("panelList-plantilla.png") top left no-repeat; }
+.panelList-info:hover{ width:20px; height:20px; background-position:-10px -10px; }
+.panelList-info{ width:20px; height:20px; background-position:-10px -40px; }
+.panelList-up:hover{ width:20px; height:20px; background-position:-10px -70px; }
+.panelList-up{ width:20px; height:20px; background-position:-10px -100px; }
+.panelList-down:hover{ width:20px; height:20px; background-position:-10px -130px; }
+.panelList-down{ width:20px; height:20px; background-position:-10px -160px; }
+.panelList-point:hover{ width:20px; height:20px; background-position:-10px -190px; }
+.panelList-back:hover{ width:20px; height:20px; background-position:-10px -220px; }
+.panelList-close:hover{ width:20px; height:20px; background-position:-10px -250px; }
+.panelList-point{ width:20px; height:20px; background-position:-10px -280px; }
+.panelList-back{ width:20px; height:20px; background-position:-10px -310px; }
+.panelList-close{ width:20px; height:20px; background-position:-10px -340px; }
+

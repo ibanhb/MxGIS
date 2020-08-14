@@ -1,0 +1,34 @@
+.p_input_text{
+    background: white; 
+    border: 1px solid #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #DDD inset; 
+    color: #666; 
+    outline: none; 
+    height:25px; 
+    width: 275px;
+	
+	padding: 3px 5px 3px 5px; 
+}
+
+.css_button {
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: inherit;
+    padding: 9px 18px;
+    cursor: pointer;
+    color: #000;
+    display: inline-block;
+    background-color: #ededed;
+}
+
+.css_button:hover {
+    background-color: #dfdfdf;
+}
+
+.css_button:active {
+    position:relative;
+    top: 1px;
+}
+

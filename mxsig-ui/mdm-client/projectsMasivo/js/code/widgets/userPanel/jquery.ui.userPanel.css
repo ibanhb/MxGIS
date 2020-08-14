@@ -1,0 +1,100 @@
+@import url('widge_userPanel.css');
+.cw-boxBorder{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.cw-shadow{
+	-webkit-box-shadow: 1px 1px 4px 1px #808080;
+	box-shadow: 1px 1px 4px 1px #808080;	
+}
+.custom-userPanel{
+    position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #FFF;
+	padding: 5px;
+	border: 1px solid #DDD;
+	color: #000;
+	text-align: center;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*sprites*/
+.userPanel-sprite{background-image: url(sprite.png);background-repeat: no-repeat;}
+
+/*----------------------*/
+.userPanel-shadow{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+}
+
+.userPanel-shadow-inset{
+   -moz-box-shadow: inset 1px 1px 2px 0px #999;
+   -webkit-box-shadow: inset 1px 1px 2px 0px #999;
+   box-shadow: inset 1px 1px 2px 0px #999;
+}
+.userPanel-boxsize{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+   
+   /* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555');
+}
+.userPanel-transition{
+    webkit-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -o-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -moz-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -ms-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -kthtml-transition: all 0.4s lcubic-bezier(0.52,0,0.48,1);
+    transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+}
+.userPanel-btnAdd{
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	margin-top: 10px;	
+}
+.userPanel-pupUp-user{
+	background-color:#FFF;
+	position: absolute;
+	bottom: 50px;
+	left: 20%;
+	padding: 2px;
+	border: 1px solid #DDD;
+	width: 165px;
+	overflow:hidden;
+	
+	-webkit-box-shadow: 1px 1px 4px 1px #808080;
+	box-shadow: 1px 1px 4px 1px #808080;
+}
+.userPanel_pupUp_btn{
+	width:180px;
+	float:left;
+	cursor:pointer;
+}
+.userPanel_pupUp_btn *{
+	cursor:pointer;
+}
+.userPanel_pupUp_btn:hover{
+	background-color:#EEE;
+	
+}
+.userPanel-icon{
+	float:left;	
+}
+.userPanel_pupUp_btn label{
+	max-width: 120px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 12px;
+	font-size: 120%;
+}

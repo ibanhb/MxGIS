@@ -1,0 +1,4 @@
+point	title	description	icon
+1976113,-10972106	my orange title	my orange description	
+2518872,-11412383	my aqua title	my aqua description	
+2518872,-11412383	my purple title	my purple description<br/>is great.	http://www.openlayers.org/api/img/zoom-world-mini.png

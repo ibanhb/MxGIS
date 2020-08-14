@@ -1,0 +1,14 @@
+.widget_userList{ background:url("widget_userList.png") top left no-repeat; }
+.userList-big-week:hover{ width:35px; height:35px; background-position:-10px -10px; }
+.userList-big-week{ width:35px; height:35px; background-position:-10px -55px; }
+.userList-big-week-ok:hover{ width:35px; height:35px; background-position:-10px -100px; }
+.userList-big-week-ok{ width:35px; height:35px; background-position:-10px -145px; }
+.userList-big-edit:hover{ width:35px; height:35px; background-position:-10px -190px; }
+.userList-big-edit{ width:35px; height:35px; background-position:-10px -235px; }
+.userList-sh-info:hover{ width:20px; height:20px; background-position:-10px -280px; }
+.userList-sh-info{ width:20px; height:20px; background-position:-10px -310px; }
+.userList-sh-close:hover{ width:20px; height:20px; background-position:-10px -340px; }
+.userList-sh-close{ width:20px; height:20px; background-position:-10px -370px; }
+.userList-sh-extent:hover{ width:20px; height:20px; background-position:-10px -400px; }
+.userList-sh-extent{ width:20px; height:20px; background-position:-10px -430px; }
+

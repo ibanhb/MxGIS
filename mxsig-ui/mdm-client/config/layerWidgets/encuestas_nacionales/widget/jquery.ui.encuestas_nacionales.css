@@ -1,0 +1,1254 @@
+@import url('sprite/sprite-encuestas_nacionales.css');
+/* CSS Document */
+.custom-encuestas_nacionales{
+	font-family:Arial, Helvetica, sans-serif;
+	width:387px;
+	height: auto;
+	border: 1px solid #EEE;
+	z-index: 1900;
+	
+	position:absolute;
+	bottom:55px;
+	left:11px;
+	
+	overflow: hidden;
+	
+	display:block;
+	background-color:#FFF;
+	
+	-webkit-box-shadow: 1px 1px 2px 0px #555;
+	box-shadow: 1px 1px 2px 0px #555;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#encuestas_nacionales_header_click_collapsed{
+	display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 106px;
+    width: 345px;
+}
+
+.custom-encuestas_nacionales[collapsed=false][seltab=info][infopanel=graph],.custom-encuestas_nacionales[collapsed=false][seltab=info][infopanel=tab]{
+	width:630px;
+}
+.custom-encuestas_nacionales[collapsed=true] #encuestas_nacionales_header_click_collapsed{
+	display: block;
+}
+.encuestas_nacionales-animated{
+    -webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+/* Spinner  ---------------------*/
+.encuestas_nacionales-logo-left{ 
+	background:url("logo.png") top left no-repeat; 
+	float: left;
+    width: 70px;
+    height: 60px;
+}
+.encuestas_nacionales-spinner-panel{
+	position: absolute;
+	z-index: 100;
+}
+.encuestas_nacionales-spinner-image{
+	background-image:url(spinner_points.GIF);
+	background-repeat: no-repeat;
+	width: 99px;
+	height: 9px;
+}
+.encuestas_nacionales-block-overlay{
+	position: absolute;
+}
+.encuestas_nacionales-spinner-image-container{
+	position: absolute;
+	top:50%;
+	left: 50%;
+}
+.encuestas_nacionales-spinner-image{
+    float: left;
+    margin-left: -50%;
+}
+
+/*----------------------*/
+
+
+.encuestas_nacionales-header{
+	float:left;	
+	float: left;
+    padding-bottom: 3px;
+	min-height: 108px;
+	width:100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.custom-encuestas_nacionales[collapsed=true] .encuestas_nacionales-header{
+	cursor: pointer;
+}
+.encuestas_nacionales-info-content{
+	display: none;
+}
+.encuestas_nacionales-info-graph{
+	display: none;
+}
+.encuestas_nacionales-info-tabulated{
+	display: none;
+}
+
+.custom-encuestas_nacionales[infopanel=data] .encuestas_nacionales-info-content{
+	display: block;
+}
+.custom-encuestas_nacionales[infopanel=graph] .encuestas_nacionales-info-graph{
+	display: block;
+}
+
+.custom-encuestas_nacionales[infopanel=tab] .encuestas_nacionales-info-tabulated{
+	display: block;
+}
+
+
+#encuestas_nacionales_header_title{
+	float: left;
+	padding: 4px 55px 4px 75px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-left: -70px;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#encuestas_nacionales_var_title{
+    font-weight: bold;
+}
+#encuestas_nacionales_subvar_title{
+	font-size: 11px;
+	max-height: 60px;
+}
+.encuestas_nacionales-truncate-text{
+	padding:4px;
+	font-size:12px;	
+}
+.encuestas_nacionales-header-btn{
+	float:right;
+	cursor:pointer;	
+}
+.encuestas_nacionales-header-btns{
+	width: 55px;
+	float: right;
+    cursor: pointer;
+    margin-left: -55px;
+}
+.encuestas_nacionales-header-colors{
+	float:right;
+    width: 100%;
+    height: 25px;
+	padding:4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.encuestas_nacionales-header-colors div{
+	float:left;
+	height:20px;
+}
+
+#encuestas_nacionales_header_btnRight_modify{	display: none;}
+#encuestas_nacionales_header_btnRight_ok_nm{display: none;}
+#encuestas_nacionales_header_btnRight_ok_n{display: none;}
+.encuestas_nacionales-header-btnRight-close{float: right}
+
+.custom-encuestas_nacionales[collapsed=true] #encuestas_nacionales_header_btnRight_modify{
+	display: block;	
+}
+.custom-encuestas_nacionales[collapsed=false][changed=false] #encuestas_nacionales_header_btnRight_ok_nm{
+	display: block;	
+}
+.custom-encuestas_nacionales[collapsed=false][changed=true] #encuestas_nacionales_header_btnRight_ok_n{
+	display: block;	
+}
+.custom-encuestas_nacionales[collapsed=false][changed=true] .encuestas_nacionales-header-btnRight-close{
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+
+.encuestas_nacionales-container{
+    float:right;
+	width:100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-geo-container{
+	float:right;
+	width:100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.encuestas_nacionales-info-content{
+	float:right;
+	width:100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-info-tabulated{
+	float:right;
+	width:100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-info-graph{
+	
+}
+
+.encuestas_nacionales-info-tab{
+	float:right;
+	width:100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.encuestas_nacionales-info-graph-container{
+	width: 100%;
+    height: 325px;
+}
+.encuestas_nacionales-info-tabulador-container{
+	width: 100%;
+    height: 325px;
+}
+.encuestas_nacionales-bk-btn{
+	width:0px;
+	height:500px;
+	background:#DFDFDF;		
+	float:left;
+	cursor:pointer;
+	
+	overflow:hidden;
+}
+.encuestas_nacionales-bk-btn-icon{
+	float: left;
+    margin-top: 200px;
+	cursor:pointer;
+}
+.encuestas_nacionales-content{
+	width: 325px;
+	height:500px;	
+	padding:4px;
+	float:right;
+	overflow: auto;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-panels-container{
+	float: right;
+    width: 100%;
+    margin-left: -60px;
+    padding-left: 60px;
+	
+	height: 500px;
+    overflow: hidden;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-toolbar-container{
+	float: left;
+	width: 60px;
+	height: 500px;
+	background-color: #EFEFEF;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-list-item{
+	width:100%;
+	padding:5px;
+	float:left;
+	font-size: 13px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	border-bottom:1px solid #999;
+}
+.encuestas_nacionales-list-item label{
+	width:100%;
+	padding-right:56px;	
+	float:left;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-item-check{
+	float:left;	
+	margin-left: -54px;
+	cursor:pointer;
+}
+
+/*Geo ----------------------*/
+.encuestas_nacionales-geo-content{
+	width: 100%;
+    height: 400px;
+    padding: 4px;
+    float: right;
+
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-geo-type{
+	float: left;
+	width: 295px;
+	height: 25px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-geo-bk-btn{
+	    width: 0px;
+		height: 349px;
+		background: #DFDFDF;
+		float: left;
+		cursor: pointer;
+		overflow: hidden;
+}
+.encuestas_nacionales-geo-bk-btn{
+	width: 0px;
+    height: 349px;
+    background: #DFDFDF;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+}
+.encuestas_nacionales-geoEdo-item{
+	width:100%;
+	float:left;
+  	padding: 3px;
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+	cursor:pointer;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+.encuestas_nacionales-geoEdo-icon{
+	width: auto;
+	height: auto;
+	float: left;
+	margin-left: -60px;
+	
+}
+.encuestas_nacionales-geoEdo-icon-sel{
+	display:block;	
+}
+.encuestas_nacionales-geoEdo-icon-unsel{
+	display:none;	
+}
+
+.encuestas_nacionales-geoEdo-item[selected=selected] .encuestas_nacionales-geoEdo-icon-unsel{
+	display: block;
+}
+.encuestas_nacionales-geoEdo-item[selected=selected] .encuestas_nacionales-geoEdo-icon-sel{
+	display: none;
+}
+
+
+.encuestas_nacionales-geoEdo-item-label{
+	float: left;
+    width: 100%;
+    padding: 6px 60px 6px 4px;
+    /*margin-left: -29px;*/
+    box-sizing: border-box;
+}
+.encuestas_nacionales-geo-seemore{
+	float: left;
+    padding-right: 5px;
+    margin-left: -35px;
+}
+.encuestas_nacionales-geo-bk-btn-icon {
+    float: left;
+    margin-top: 146px;
+    cursor: pointer;
+}
+
+.encuestas_nacionales-geo-container[parent=true] .encuestas_nacionales-geo-bk-btn {
+    width: 25px;
+	position: relative;
+}
+.encuestas_nacionales-geo-container[parent=true] .encuestas_nacionales-geo-content {
+    margin-left: -27px;
+    padding-left: 34px;
+}
+
+/* Fin Geo list */
+
+
+.encuestas_nacionales-item-forward{
+	float:left;	
+	margin-left: -30px;
+	cursor:pointer;
+}
+.encuestas_nacionales-strat-method{
+	float:left;
+	width:100%;
+	height:38px;
+	padding:5px;
+	font-size:12px;
+	overflow: hidden;
+	
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-strat-method .encuestas_nacionales-strat-item{
+	float:left;
+	width:99%;
+	text-align:center;
+	background:#e4aca0;
+	padding:4px;
+	margin: 2px 2px 2px 2px;
+	/*cursor:pointer;*/
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.encuestas_nacionales-strat-item:hover{
+	background:#B19C9C;
+}
+.encuestas_nacionales-strat-item.selected{
+	background:#CACACA;
+}
+
+.encuestas_nacionales-years{
+	float:left;
+	width:100%;
+	height:37px;
+	padding:5px;
+	font-size:12px;
+	overflow: hidden;
+	
+	border-bottom:1px solid #999;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.encuestas_nacionales-years div{
+	float:left;
+	width:24%;
+	text-align:center;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.encuestas_nacionales-years-item{
+	text-align:center;
+	background:#F0F0F0;
+	padding:4px;
+	margin: 2px 2px 2px 2px;
+	/*cursor:pointer;*/	
+}
+.encuestas_nacionales-years-item:hover{
+	/*background:#e8d2d6;*/	
+}
+.encuestas_nacionales-years-item.selected{
+	background:#CACACA;	
+}
+
+/* Control de visualización de paneles -------------------------*/
+.custom-encuestas_nacionales[collapsed=true] .encuestas_nacionales-panels-container{
+	height:0px;
+	overflow: hidden;
+}
+.custom-encuestas_nacionales[collapsed=true] .encuestas_nacionales-toolbar-container{
+	height:0px;
+	overflow: hidden;
+}
+
+
+.custom-encuestas_nacionales[collapsed=true] .encuestas_nacionales-container{
+	height:0px;
+	overflow: hidden;
+}
+/*.custom-encuestas_nacionales[collapsed=true] .encuestas_nacionales-strat-method{
+	height:0px;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+}
+.custom-encuestas_nacionales[collapsed=true] .encuestas_nacionales-years{
+	height:0px;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+}
+*/
+
+.custom-encuestas_nacionales[collapsed=false] .encuestas_nacionales-header-colors{
+	display:none;
+}
+
+
+/* animacion de boton back  -----------------------------------*/
+.encuestas_nacionales-container[parent=true] .encuestas_nacionales-bk-btn{
+	width:25px;
+}
+.encuestas_nacionales-container[parent=true] .encuestas_nacionales-content{
+	margin-left: 0px;
+    padding-left: 0px;
+	width: 298px;
+}
+
+/*Logo --------------------------------------------------------*/
+
+/* Tabs    */
+.encuestas_nacionales-tab{
+	cursor: pointer;
+    background-position: 9px 0px;
+	margin: 4px 0px 4px 0px;
+    width: 100% !important;
+	text-align: center;
+	padding: 2px 0px 2px 0px;
+	
+}
+.encuestas_nacionales-tab:hover{
+	background-color: #CACACA;
+}
+.encuestas_nacionales-tab div:first-of-type{
+	margin-left: 9px;
+}
+
+.custom-encuestas_nacionales[seltab=var] #encuestas_nacionales_tab_vars{
+	background-color: #CACACA;
+}
+.custom-encuestas_nacionales[seltab=geo] #encuestas_nacionales_tab_geo{
+	background-color: #CACACA;
+}
+.custom-encuestas_nacionales[seltab=graph] #encuestas_nacionales_tab_graph{
+	background-color: #CACACA;
+}
+
+.custom-encuestas_nacionales[seltab=info] #encuestas_nacionales_tab_info{
+	background-color: #CACACA;
+}
+
+.encuestas_nacionales-encuestas_nacionales_card_values{
+	display: none;
+	float: right;
+}
+
+.encuestas_nacionales-tab-container{
+	display: none;
+}
+
+.custom-encuestas_nacionales[seltab=var] .encuestas_nacionales-container{
+	display: block;
+}
+.custom-encuestas_nacionales[seltab=geo] .encuestas_nacionales-geo-container{
+	display: block;
+}
+.custom-encuestas_nacionales[seltab=graph] .encuestas_nacionales-conf-container{
+	display: block;
+}
+.custom-encuestas_nacionales[seltab=info] .encuestas_nacionales-info-container{
+	display: block;
+}
+.custom-encuestas_nacionales[seltab=tab] .encuestas_nacionales-info-tabulated{
+	display: block;
+}
+
+
+.custom-encuestas_nacionales[cantheme=false] .encuestas_nacionales-tab-container{
+	display: none;
+}
+.custom-encuestas_nacionales[cantheme=false] .encuestas_nacionales-geo-container{
+	display: block;
+}
+
+
+.encuestas_nacionales-disable-toolbars{
+	position: absolute;
+	left: 0px;
+    top: 125px;
+    width: 60px;
+    height: 250px;
+    background-color: rgba(255,255,255,0.4);
+	display: none;
+}
+.custom-encuestas_nacionales[cantheme=false] .encuestas_nacionales-disable-toolbars{
+	display: block;
+}
+
+.encuestas_nacionales-geo-type .encuestas_nacionales-geoType-item.selected{
+	background:#deb9b9;
+	border: 2px solid #57867B;
+}
+.encuestas_nacionales-strat-item-selector{
+	float: left;
+	height:auto;
+	padding: 2px 2px 2px 2px;
+	margin-right: 2px;
+	border:1px solid #CFCFCF;
+	cursor: pointer;
+	text-align: center;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.encuestas_nacionales-strat-item-selector.selected{
+	background: #DFCA76;
+	border:1px solid #CFCFCF;
+	border-bottom: 2px solid #4E4E4E;
+}
+.encuestas_nacionales-strat-item-selector label{
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+.encuestas_nacionales-strat-selector-color{
+	width: 100%;
+	height: 5px;
+	float: left;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+.encuestas_nacionales-strat-table{
+	width: 100%;
+	font-size: 11px;
+}
+.encuestas_nacionales-strat-table tr:nth-child(even) {
+	background: #E4E4E4;
+}
+.encuestas_nacionales-strat-table tr{
+	display: none;
+}
+.encuestas_nacionales-strat-table[strat=e1] tr[idstrat=e1]{
+	display: table-row;
+	width: 100%;
+}
+.encuestas_nacionales-strat-table[strat=e2] tr[idstrat=e2]{
+	display: table-row;
+	width: 100%;
+}
+.encuestas_nacionales-strat-table[strat=e3] tr[idstrat=e3]{
+	display: table-row;
+	width: 100%;
+}
+.encuestas_nacionales-strat-table[strat=e4] tr[idstrat=e4]{
+	display: table-row;
+	width: 100%;
+}
+.encuestas_nacionales-strat-table[strat=e5] tr[idstrat=e5]{
+	display: table-row;
+	width: 100%;
+}
+.encuestas_nacionales-strat-table td{
+	padding: 5px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+
+.encuestas_nacionales-strat-table .encuestas_nacionales-table-head{
+	display: table-row;
+	font-size: 12px;
+    font-weight: bold;
+    background-color: #CACACA;
+}
+
+.encuestas_nacionales-strat-table-container{
+	width: 100%;
+	height: 450px;
+	overflow-y: auto;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.encuestas_nacionales-info-var-icon{
+	float:left;
+	cursor: pointer;
+}
+.encuestas_nacionales-geotype-item{
+	padding: 2px 4px 2px 4px;
+	margin: 3px 2px 0px 4px;
+	width: auto;
+	float: left;
+	font-size: 14px;
+	
+	cursor: pointer;
+}
+.encuestas_nacionales-geotype-item:hover{
+	background:#DDDDDD;
+}
+
+.encuestas_nacionales-geotype-item.selected{
+	background:#CACACA;	
+}
+.encuestas_nacionales-header-colors-years-label{
+	width: 100%;
+	float: left;
+	height: 16px !important;
+	
+}
+.encuestas_nacionales-header-year-label-left{
+	float: left;
+	padding-left: 2px;
+	height: 13px !important;
+	border-left: 1px solid;
+}
+
+.encuestas_nacionales-header-year-label-right{
+	float: right !important;
+	height: 13px !important;
+	padding-right: 2px;
+	border-right: 1px solid;
+}
+
+.encuestas_nacionales-strats-currentRamps-container{
+	float: left;
+	width: 100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.encuestas_nacionales_strats_currentRamp{
+	float:left;
+	width:100%;
+}
+.encuestas_nacionales-strats-colorRamp{
+	float: left;
+    width: 16%;
+    padding: 1px 1px 1px 1px;
+	border: 2px solid #FFF;
+	cursor:pointer;
+	margin-top: 2px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-strats-colorRamp:hover{
+	border: 3px solid #BBB;
+}
+
+.encuestas_nacionales-strats-currentRamps-container .encuestas_nacionales-strats-colorRamp[selected=selected]{
+	border: 3px solid #deb9b9}
+
+.encuestas_nacionales-strats-ramp-color{
+	height:16px;
+	float:left;	
+}
+
+.encuestas_nacionales-theme-normalInfo{
+	float:left;
+	width:48%;
+	padding:0px 3px 10px 6px;
+	font-size:12px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-theme-mainInfo{
+	float:right;
+	width:48%;
+	padding:0px 3px 10px 6px;
+	font-size:12px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.encuestas_nacionales-theme-info label{
+	float: right;
+}
+.encuestas_nacionales-strats-transparency-container{
+	float:left;
+	width:97%;
+	padding:4px;
+	background-color:#FFF;	
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-export-type-item{
+	float: left;
+	cursor: pointer;
+}
+.encuestas_nacionales-metadata-frame{
+	border: none;
+	
+}
+.encuestas_nacionales-graph-strat{
+	width: 323px;
+	height: auto;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* estrato infomacion detalle */
+.encuestas_nacionales-stratum-detail-item{
+	width: 49%;
+    height: 29px;
+    float: left;
+	font-size: 12px;
+    
+	padding: 2px;
+	border: 1px solid #EEE;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-stratum-detail-item-color{
+	width: 30px;
+	height: 23px;
+	float: left;
+	
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-stratum-detail-item-info{
+	width: 100%;
+	height: 30px;
+    float: left;
+    padding-left: 35px;
+    margin-left: -30px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-stratum-detail-item-info-vals{
+	float: left;
+	width: 100%;
+	height: 13px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-stratum-detail-item-info-label{
+	float: left;
+}
+.encuestas_nacionales-stratum-detail-item-info-value{
+	float: right;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-geo-content-options{
+	float: left;
+	height: 20px;
+	font-size: 13px;
+	display: none;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.encuestas_nacionales-geo-content-options div{
+	cursor: pointer;
+	padding: 2px 4px 2px 4px;
+	float: left;
+	margin: 0px 2px 0px 2px;
+	
+	border-right: 1px solid #DDD;
+}
+.encuestas_nacionales-geo-content-options div:last-child{
+	border-right: 0px solid #DDD;
+}
+.encuestas_nacionales-geo-content-options div:hover{
+	background-color: #CACACA;	
+}
+.encuestas_nacionales-tool-option{
+	background-color: #ECECEC;
+}
+.custom-encuestas_nacionales[geotype="edo"] .encuestas_nacionales-geo-content-options{
+	display: block;
+}
+.encuestas_nacionales-container[typeselection=edomun] div[idref=edomun]{
+	background-color: #deb9b9;
+}
+.encuestas_nacionales-container[typeselection=edo] div[idref=edo]{
+	background-color: #deb9b9;
+}
+.encuestas_nacionales-container[typeselection=mun] div[idref=mun]{
+	background-color: #deb9b9;
+}
+
+/*.custom-encuestas_nacionales[geotype="edo"] .encuestas_nacionales-geo-content{
+	height: 320px;
+}*/
+.encuestas_nacionales-tab-bottom-container{
+	position: absolute;
+    bottom: 0px;
+    width: 60px;
+	display: none;
+	opacity: 0;
+	
+}
+.encuestas_nacionales-tab-bottom-container div{
+	cursor: pointer;
+    background-position: 9px 0px;
+    margin: 4px 0px 4px 0px;
+    width: 100% !important;
+}
+.custom-encuestas_nacionales[collapsed="false"] .encuestas_nacionales-tab-bottom-container{
+	display: block;
+	opacity: 1;
+}
+.encuestas_nacionales-confiden-bg{
+	background-image: url(d_reservados.jpg);
+}
+.encuestas_nacionales-confiden-bg-no{
+	background-image: url(d_reservados_no.jpg);
+}
+
+.encuestas_nacionales-strats-strat-title{
+	width:25%;
+	float:left;
+	padding:0px 0px 0px 4px;
+}
+
+
+.encuestas_nacionales-strats-data-config-strats{
+	width:100%;
+	float:left;
+	padding:4px;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-strats-strat-item{
+	width:18%;
+	height:22px;
+	margin:1%;
+	text-align:center;
+	float:left;
+	padding:3px 4px 3px 4px;
+	font-size: 13px;
+	border:1px solid #AAA;
+	cursor:pointer;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-strats-strat-item:hover{
+	background-color:#EEE;
+}
+.encuestas_nacionales-strats-strat-item.selected{
+	background-color:#CACACA;
+}
+
+.encuestas_nacionales-strats-data-container{
+	float:left;
+	width:100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* Card -------------------------------------------------------------------------------------------------------*/
+.encuestas_nacionales-table-color thead{
+	background: #CACACA;
+}
+.encuestas_nacionales-table-color{
+	width: 100%;
+	font-size: 11.5px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-table-color td{
+	padding: 4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-table-color tr:nth-child(even) {
+	background: #CACACA;
+}
+##encuestas_nacionales_card_indicators{
+	overflow-y: auto;
+}
+
+#encuestas_nacionales_card_indicators ul{
+	padding-left: 23px;
+}
+#encuestas_nacionales_card_indicators li{
+	list-style: decimal outside;
+	padding: 2px 0px 2px 4px;
+	cursor: pointer;
+	border-left: 4px solid #FFF;
+}
+#encuestas_nacionales_card_indicators li *{
+	cursor: pointer;
+}
+#encuestas_nacionales_card_indicators li:hover{
+	background: #dfbf9f;
+}
+#encuestas_nacionales_card_indicators li.active{
+	border-left: 4px solid #F00;
+}
+#encuestas_nacionales_card_indicators li label{
+	
+}
+
+
+#encuestas_nacionales_card_header{
+	width: 100%;
+    height: 84px;
+    float: left;
+	overflow-y: auto;
+}
+#encuestas_nacionales_card_indicators_container{
+	height: 319px;
+    width: 269px;
+    background-color: #F4F0F0;
+	float:left;
+	overflow: hidden;
+	
+	padding: 10px;
+    font-size: 13px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	overflow-y: auto;
+}
+#encuestas_nacionales_card_indicators_closebtn{
+	float: right;
+	clear: both;
+	
+}
+#encuestas_nacionales_card_indicators_closebtn *{
+	float:left;	
+}
+#encuestas_nacionales_card_indicators{
+	height: 290px;
+    width: 259px;
+    background-color: #F4F0F0;
+	float:left;
+	
+	padding: 10px;
+    font-size: 13px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#encuestas_nacionales_card_values{
+	/*width: 495px;
+    float: right;
+    */
+    height: 318px;
+    overflow-y: auto;
+	padding: 0px 4px 0px 4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#encuestas_nacionales_card_toolbar{
+	float: left;
+    clear: left;
+    padding-top: 6px;
+}
+#encuestas_nacionales_card_toolbar div{
+	float: left;
+}
+
+.encuestas_nacionales-card-title-indicators{
+	font-size: 14px;
+	font-weight: bold;
+	width: 100%;
+	float: left;
+}
+
+.encuestas_nacionales-card-blockcontent{
+	float: left;
+}
+.encuestas_nacionales-card-title{
+	font-size: 12px;
+    font-weight: bold;
+    padding: 6px 3px 3px 3px;
+	float: left;
+	clear: both;
+	width: 100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-switchtograph-btn{
+	float: left;
+	cursor: pointer;
+}
+.encuestas_nacionales-switchtodata-btn{
+	float: left;
+	cursor: pointer;
+}
+
+.encuestas_nacionales-card-varid{
+	display: inline-block;
+	margin-top: 0px;
+    float: left;
+}
+.encuestas_nacionales-card-blockcontent{
+	width: 100%;
+}
+.encuestas_nacionales-card-blockcontent table{
+	width: 100%;
+}
+
+#toolencuestas_nacionales_info_content[status=collapsed] #encuestas_nacionales_card_indicators_container{
+	width: 53px;
+}
+#toolencuestas_nacionales_info_content[status=collapsed] #encuestas_nacionales_card_values{
+	width: 708px;
+}
+.sprite-encuestas_nacionales-sright, .sprite-encuestas_nacionales-sleft{
+	cursor: pointer;
+}
+
+#toolencuestas_nacionales_info_content .sprite-encuestas_nacionales-sright{
+	display: none;
+}
+#toolencuestas_nacionales_info_content[status=collapsed] .sprite-encuestas_nacionales-sright{
+	display: block;
+}
+#toolencuestas_nacionales_info_content[status=collapsed] .sprite-encuestas_nacionales-sleft{
+	display: none;
+}
+
+.geolectoral-card-table-labelcolumn{
+	min-width: 265px;
+}
+.encuestas_nacionales-card-export-link-item{
+	float: left;
+	padding: 0px 2px 0px 5px;
+	margin-left: 3px;
+	background-color: #EEE;
+}
+.encuestas_nacionales-card-export-link-item *{
+	float: left;
+}
+.encuestas_nacionales-card-export-link-item label{
+	margin-top: 6px;
+}
+#encuestas_nacionales_geo_type{
+	display: none;
+}
+.encuestas_nacionales-info-content-tabulate{
+	width: 570px;
+	height: 323px;
+	overflow: auto;
+	box-sizing: border-box;
+}
+.encuestas_nacionales-tabulated-table-content{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.encuestas_nacionales-detail-data-row{
+    cursor: pointer;
+}
+#encuestas_nacionales_tabulador_table td, #encuestas_nacionales_tabulador_table th {
+    border: 0.5px;
+}
+
+#encuestas_nacionales_tabulador_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#encuestas_nacionales_tabulador_table tr:hover {background-color: #ddd;}
+
+#encuestas_nacionales_tabulador_table th {
+    padding-top: 12px;
+    text-align: center;
+    background-color:#e4aca0;
+    color: white;
+    min-width:80px;
+}
+.encuestas_nacionales-content-pop{
+	overflow-y: auto;
+	box-sizing: border-box;
+	border: 0.5px solid #CACACA;
+    width: 315px;
+    height: 350px;
+    margin-bottom: 2px;
+}
+.encuentas_nacionales_block_period {
+    box-sizing: border-box;
+    border: 0.5px solid #CACACA;
+    width: 315px;
+    height: 57px;
+    margin-bottom: 2px 
+}
+.encuentas_nacionales_block_period-title{
+	font-size:14px;
+	background: #d6d3d3;
+	margin-bottom: 2px;
+}

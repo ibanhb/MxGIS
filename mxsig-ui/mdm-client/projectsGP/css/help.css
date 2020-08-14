@@ -1,0 +1,101 @@
+.mdmp-help-video-container{
+	position:absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	top:0px;
+	z-index:10000;	
+}
+#mdmp_video_bg{
+	position:absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	top:0px;
+	background-color:rgba(255,255,255,0.55);
+}
+#mdmp_video{
+	position:absolute;
+	right:0px;
+	left:200px;
+	top:0px;
+	bottom:0px;
+}
+#mdmp_video video{
+	margin-left:-625px;
+	
+}
+.mdmp_video_vertical{
+	margin-top:50px;
+	height:1px;
+	width:1px;	
+}
+#mdmp_video_tracks{
+	position:absolute;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	width:266px;
+	z-index:100;
+	overflow-y:auto;
+	
+	background-color:rgba(255,255,255,0.7);
+	
+	-moz-box-shadow:    1px 1px 2px 0px #555;
+    -webkit-box-shadow: 1px 1px 2px 0px #555;
+    box-shadow:         1px 1px 2px 0px #555;
+}
+.mdmp-help-video-track-item[current=true]{
+	animation-duration: 2s;
+  	animation-name: flashGreen;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	
+	-moz-animation-duration: 2s;
+	-moz-animation-name: flashGreen;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	
+  	-webkit-animation-duration: 2s;
+  	-webkit-animation-name: flashGreen;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+}
+.mdmp-help-video-track-item{
+	float: left;
+	background-color: #FFF;
+	width: 237px;
+	clear: both;
+	padding: 10px;
+	font-size: 133%;
+	border: 1px solid #DDD;
+	
+	margin-top:5px;
+	cursor:pointer;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+	
+	-moz-box-shadow:    1px 1px 2px 0px #555;
+    -webkit-box-shadow: 1px 1px 2px 0px #555;
+    box-shadow:         1px 1px 2px 0px #555;	
+}
+.mdmp-help-video-track-item:hover{
+	background-color:#CCC;
+}
+.mdmp-help-video-track-item *{
+	float:left;	
+}
+.mdmp-help-video-track-item label{
+	max-width:150ox;	
+}
+#mdmp_video_close{
+	cursor:pointer;
+	margin-left: 373px;
+}
+#mdmp_video_help{
+	-moz-box-shadow:    1px 1px 2px 0px #555;
+    -webkit-box-shadow: 1px 1px 2px 0px #555;
+    box-shadow:         1px 1px 2px 0px #555;
+}

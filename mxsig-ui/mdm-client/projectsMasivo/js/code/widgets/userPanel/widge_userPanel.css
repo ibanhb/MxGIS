@@ -1,0 +1,10 @@
+.widge_userPanel{ background:url("widge_userPanel.png") top left no-repeat; }
+.userPanel-btnAdd:hover{ width:40px; height:40px; background-position:-10px -10px; }
+.userPanel-btnAdd{ width:40px; height:40px; background-position:-10px -60px; }
+.userPanel-usericon-3:hover{ width:40px; height:40px; background-position:-10px -110px; }
+.userPanel-usericon-2:hover{ width:40px; height:40px; background-position:-10px -160px; }
+.userPanel-usericon-1:hover{ width:40px; height:40px; background-position:-10px -210px; }
+.userPanel-usericon-3{ width:40px; height:40px; background-position:-10px -260px; }
+.userPanel-usericon-2{ width:40px; height:40px; background-position:-10px -310px; }
+.userPanel-usericon-1{ width:40px; height:40px; background-position:-10px -360px; }
+

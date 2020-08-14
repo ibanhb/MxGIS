@@ -1,0 +1,342 @@
+@import url('animate.css');
+@import url('plantilla.css');
+@import url('inputs.css');
+@import url('mdmp_plantilla.css');
+@import url('workloadForm.css');
+@import url('week.css');
+@import url('division.css');
+@import url('mdmpWorkload.css');
+@import url('userDetail.css');
+@import url('help.css');
+@import url('graph.css');
+@import url('reports.css');
+#p_login_panel{
+	font-size:14px;
+}
+.pzi-10000{
+	z-index:10000;	
+}
+.p_modal_center{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1px;
+    height: 1px;
+}
+#p_login_panel input{
+	margin-top:5px;	
+}
+.p_modal_panel_content{
+	width:350px;
+	height:370px;
+	
+	margin-left:-175px;
+	margin-top:-175px;
+	
+	background-color:#FFF;
+	background-image:url(../img/logo.jpg);
+	background-repeat:no-repeat;
+	
+	padding: 214px 10px 10px 10px;
+	
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	-webkit-box-shadow: 2px 2px 5px 2px #949494;
+	box-shadow: 2px 2px 5px 2px #949494;	
+}
+
+/*---------------- restored code -------------------------*/
+
+#mdmp{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+}
+#mdmp_headerPanel{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	height:76px;
+}
+#mdmp_panelsContainer{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:78px;
+	bottom:60px;
+	overflow-y:auto;
+	padding: 0px;
+	padding-right: 2px;
+}
+#mdmp_footer{
+	position:absolute;
+	left:0px;
+	right:0px;
+	height:60px;
+	bottom:0px;
+	padding: 0px;
+	padding-right: 2px;
+	background-color:#EEE;
+}
+#mdmp_spinner{
+	position:absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	top:0px;
+	background: rgb(235, 235, 235); /* Fall-back for browsers that don't
+                                    support rgba */
+    background: rgba(80, 80, 80, .3);
+	z-index:9999;
+}
+/*#headerLogoMDM{ 
+	webkit-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -o-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -moz-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -ms-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -kthtml-transition: all 0.4s lcubic-bezier(0.52,0,0.48,1);
+    transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+}
+
+#headerLogoMDM{
+	right:75px !important;	
+}
+
+*/
+#mdmp_spinner div{
+	position:absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	top:0px;
+	background-image:url(../img/spinner.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+#mdmp_btnLogout{
+	background-image: url(../img/logOut.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	width: 40px;
+	height: 37px;
+	cursor: pointer;
+	z-index: 10;
+}
+#mdmp_btnHelp{
+	background-image: url(../img/help.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 45px;
+	top: 6px;
+	width: 40px;
+	height: 37px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.custom-panel-container{
+	background-color:#FFF;
+	border: 1px solid #DDD;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mdmp-feature-scale{
+	z-index: 1000;
+	background-color:#FFF;
+	background-color: rgba(255,255,255,0.5);
+	width: 63px;
+	height: 45px;
+	position: absolute;
+	bottom: 61px;
+	left: 8px;	
+}
+/* Effects  */
+
+
+keyframes flashRed {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+	  background-color:#DE634E
+ }
+}
+	
+@-moz-keyframes flashRed {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+  background-color:#DE634E
+ }
+}
+    
+@-webkit-keyframes flashRed {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+  background-color:#DE634E
+ }
+}
+
+
+@keyframes mdm-warning{
+from {
+	background-color:#E8E8E8;
+ }
+
+to {
+  background-color:#DE634E
+}
+	/*from {backgroung-color:#CCC !important;}
+	to {backgroung-color:#C30 !important;}*/
+}
+.mdm-bg-warning{
+	animation-duration: 2s;
+  	animation-name: flashRed;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	
+	-moz-animation-duration: 2s;
+	-moz-animation-name: flashRed;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	
+  	-webkit-animation-duration: 2s;
+  	-webkit-animation-name: flashRed;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+}
+
+/*green flash*/
+keyframes flashGreen {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+	background-color:#64E855;
+ }
+}
+	
+@-moz-keyframes flashGreen {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+  background-color:#64E855;
+ }
+}
+    
+@-webkit-keyframes flashGreen {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+  background-color:#64E855;
+ }
+}
+
+
+@keyframes mdm-warning{
+from {
+	background-color:#E8E8E8;
+ }
+
+to {
+  background-color:#64E855;
+}
+	/*from {backgroung-color:#CCC !important;}
+	to {backgroung-color:#C30 !important;}*/
+}
+.mdm-bg-ok{
+	animation-duration: 2s;
+  	animation-name: flashGreen;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	
+	-moz-animation-duration: 2s;
+	-moz-animation-name: flashGreen;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	
+  	-webkit-animation-duration: 2s;
+  	-webkit-animation-name: flashGreen;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+}
+
+/* External Process ---------------------------*/
+#externalProcess{
+	position: absolute;
+	z-index: 10000;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+.externalProcess-container{
+	position:absolute;
+	width:1px;
+	height:1px;
+	left:50%;
+	top:50%;
+}
+#externalProcess_content{
+	width: 350px;
+	height: 300px;
+	float: left;
+	margin-left: -175px;
+	margin-top: -150px;
+	
+	padding:8px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#externalProcess_content label{
+	width: 100%;
+	text-align: center;
+	font-size: 235%;
+	color: #FFF;
+	
+	text-shadow: 1px 1px 3px #141414;
+}
+/* Ajustes Extras       */
+#btnProductividad{
+	width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 92px;
+    z-index: 1000;	
+	cursor:pointer;
+}
+#btnProductividad img{
+	width:36px;	
+}
+
+/*
+
+*/
+#selectprod{
+	font-size: 20px;
+    width: 330px;	
+}
+.mdmp-hidde-control{
+	display:none;
+}

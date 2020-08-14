@@ -1,0 +1,8 @@
+.widget_colorSelector{ background:url("widget_colorSelector.png") top left no-repeat; }
+.colorSelector-selector:hover{ width:50px; height:50px; background-position:-10px -10px; }
+.colorSelector-selector{ width:50px; height:50px; background-position:-10px -70px; }
+.colorSelector-bulb{ width:30px; height:30px; background-position:-10px -130px; }
+.colorSelector-colorWhite{ width:30px; height:30px; background-position:-10px -170px; }
+.colorSelector-colorBlack{ width:30px; height:30px; background-position:-10px -210px; }
+.colorSelector-palette{ width:30px; height:30px; background-position:-10px -250px; }
+

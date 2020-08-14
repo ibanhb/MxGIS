@@ -1,0 +1,42 @@
+﻿{
+	"response": {
+		"success": true,
+		"message": "OK"
+	},
+	"data": {
+		"recordCount": 53056,
+		"currentPage": 1,
+		"pages": 5306,
+		"elements": [{
+			"ID": 331840,
+			"Nombre": "San Pedro de la Piedra"
+		}, {
+			"ID": 342642,
+			"Nombre": "San Antonio Teacalco"
+		}, {
+			"ID": 296092,
+			"Nombre": "Corral de Piedra"
+		}, {
+			"ID": 331843,
+			"Nombre": "Graciano Bortoni"
+		}, {
+			"ID": 310796,
+			"Nombre": "Francisco Villa"
+		}, {
+			"ID": 310861,
+			"Nombre": "Kuchumatán"
+		}, {
+			"ID": 310932,
+			"Nombre": "Melchor Ocampo"
+		}, {
+			"ID": 310959,
+			"Nombre": "Nuevo Jerusalén"
+		}, {
+			"ID": 310803,
+			"Nombre": "Huatusco"
+		}, {
+			"ID": 300701,
+			"Nombre": "Gabino Vázquez"
+		}]
+	}
+}

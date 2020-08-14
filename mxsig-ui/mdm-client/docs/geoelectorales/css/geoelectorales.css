@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+.titles{
+	color:#C51A86; 
+	font-size:13pt;
+	font-weight: bold;
+}
+.linea{
+	height:5px;
+	width:100%;
+	border-top: 5px solid #785F41;
+	border-bottom: 2px solid #785F41;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.subtitles{
+	color:#C51A86;
+	font-size:11pt
+}
+.bg{background: #EFEFEF;}
+
+.text{
+	font-size:9pt;
+	text-align:justify;
+}
+.image{
+	margin: 10px auto;
+	display: block;
+	width: auto;
+	/*height: 12%;*/
+}
+.footer{
+	font-size:9pt;
+	text-align:justify;
+	color:black
+}

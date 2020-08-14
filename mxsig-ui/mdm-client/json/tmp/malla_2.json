@@ -1,0 +1,16 @@
+{
+    "nom_ent": "Oaxaca",
+    "cve_ent": "20",
+    "nom_mun": "Santiago Textitlán",
+    "cve_mun": "491",
+    "control": "02001062-8017",
+    "terrenos": 10000,
+    "agricola_t": 584,
+    "cria_t": 7787,
+    "forestal_t": 8954,
+    "otra_t": 1548,
+    "sin_t": 58,
+    "prod_t": 845,
+    "prod_s": 988988,
+    "prod_p": 45
+}

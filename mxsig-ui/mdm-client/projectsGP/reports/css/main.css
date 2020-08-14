@@ -1,0 +1,93 @@
+@import url('htmlObjectsMod.css');
+@import url('elements.css');
+body{
+	overflow-x:hidden;
+	background-color:#F7F7F7;
+}
+#results_container{
+	max-width:960px;	
+}
+.report-header{
+	background-image:url(../../img/headerMDMBackground.jpg);
+	height:43px;
+	text-shadow: 2px 2px 5px #666666;
+	color:#FFF;
+	font-size:25px;
+}
+.report-map-container{
+	height:500px;
+	width:960px;
+	background-color:#CCC;
+	margin-left:auto;
+	margin-right:auto;
+}
+#report_spinner{
+	position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+#report_spinner .progress{
+	margin:0px;
+}
+#toast-container p{
+	float:left;
+	clear:both;
+}
+#toast-container label{
+	color:#000 !important;
+}
+.toast{
+	background-color:#FFF;
+	max-width:350px;
+}
+.report-message-title{
+	max-width:200px;
+	word-break:normal;
+	padding-right: 10px;
+}
+.report-message-content{
+	max-width:250px;
+	word-break:normal;
+}
+.connection-ok-indicator{
+	height:20px;
+	width:120px;
+	background-color:#0F6;
+}
+.connection-error-indicator{
+	height:20px;
+	width:120px;
+	background-color:#F30;
+}
+/* Cities -------------------------*/
+.city_item{
+	width: 220px;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    cursor: pointer;
+    float: left;
+    margin: 5px;
+}
+.city_item *{
+	cursor:pointer;
+}
+.city_item_selected{
+	background-color:#FF9;
+	border:1px dotted #FFCC00;
+}
+.city_item:hover{
+	background-color:#DCF9D9;	
+	border: 1px dotted #063;
+}
+.city_item label{
+	clear:left;	
+}
+.edo_cities{
+	padding:5px;
+	width:100%;
+	text-align:left;
+	background-color:#CCC;
+	font-size: 150%;
+	
+}

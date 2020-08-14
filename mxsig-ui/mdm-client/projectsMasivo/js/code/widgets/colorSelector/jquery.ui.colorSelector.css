@@ -1,0 +1,128 @@
+@import url('widget_colorSelector.css');
+.cw-boxBorder{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.cw-shadow{
+	-webkit-box-shadow: 1px 1px 4px 1px #808080;
+	box-shadow: 1px 1px 4px 1px #808080;	
+}
+.custom-colorSelector{
+    position: absolute;
+	width: 230px;
+	height: 295px;
+	background-color: #FFF;
+	padding: 5px;
+	color: #000;
+	text-align: center;
+}
+
+
+/*sprites*/
+.colorSelector-sprite{background-image: url(sprite.png);background-repeat: no-repeat;}
+
+/*----------------------*/
+.colorSelector-shadow{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+}
+
+.colorSelector-shadow-inset{
+   -moz-box-shadow: inset 1px 1px 2px 0px #999;
+   -webkit-box-shadow: inset 1px 1px 2px 0px #999;
+   box-shadow: inset 1px 1px 2px 0px #999;
+}
+.colorSelector-boxsize{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+   
+   /* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555');
+}
+.colorSelector-transition{
+    webkit-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -o-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -moz-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -ms-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -kthtml-transition: all 0.4s lcubic-bezier(0.52,0,0.48,1);
+    transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+}
+
+.colorSelector-color{
+	border: 2px solid #FFF;
+	width: 10px;
+	height: 10px;
+	float: left;
+}
+.colorSelector-colorContainer .colorSelector-color:hover{
+	border: 2px dotted #09F !important;
+	cursor: pointer;
+}
+.colorSelector-automaticSelection{
+	border: 2px dotted #F00 !important;
+}
+.colorSelector-markUsed{
+	border: 2px solid #000;
+}
+.colorSelector-suggestion{
+	width: 176px;
+	height: 50px;
+	border: 1px solid #DDD;
+	float: left;
+	padding:4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.colorSelector-colorContainer{
+	margin-top:3px;
+	width: 179px;
+	height: 250px;
+	overflow-y: auto;
+	float: left;	
+}
+.colorSelector-leftBar{
+	float: left;
+	width: 50px;
+	height: 250px;	
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.colorSelector-leftBarIcon{
+	float:left;
+	cursor:pointer;	
+}
+.colorSelector-usedColor{
+	width: 43px;
+	float: left;
+	height: 234px;
+	border: 1px solid #EEE;
+	margin-top: 5px;	
+}
+.colorSelector-usedColorIcon{
+	float:left;
+	margin-left: 5px;	
+}
+.colorSelector-usedColors{
+	width:100%;
+	height:235px;
+}
+.colorSelector-colorSuggestion{
+	width: 100%;
+	height: 100%;
+	text-align:center;
+	padding-top:10px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}

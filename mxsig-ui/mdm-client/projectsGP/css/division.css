@@ -1,0 +1,267 @@
+.division-container{
+	width: 779px;
+    height: 403px;
+    position: absolute;	
+}
+.division-list{
+	position:absolute;
+	left:0px;
+	top:17px;
+	bottom:0px;
+	width:350px;
+}
+.division-panel-title{
+	float:left;
+	height:15px;
+	width:50%;
+}
+.division-panel-title:last-of-type{
+	float:right;	
+}
+.division-panel{
+	position:absolute;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	right:0px;
+}
+.list-entrevistadores{
+	left:auto;
+	right:0px;	
+}
+
+.list-entrevistadores *{
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Listados  ----------------------------*/
+.division-list-item{
+	width: 100%;
+    height: 50px;
+    margin: 5px 0px 5px 0px;
+    padding: 2px;
+    border: 1px solid #EEE;	
+	cursor:pointer;
+	
+	-moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+}
+.division-list-item:hover{
+	background-color:#EEE;
+	
+	-moz-box-shadow:    1px 1px 11px 0px #555;
+   -webkit-box-shadow: 1px 1px 11px 0px #555;
+   box-shadow:         1px 1px 11px 0px #555;	
+   
+}
+.division-list-item.selected{
+	background-color:#ACD0EF;
+}
+.division-list-item-color{
+	width: 50px;
+    height: 44px;
+	float:left;
+}
+.division-list-item-color span{
+	font-size: 29px;
+    padding-top: 6px;
+    float: left;
+    text-align: center;
+    width: 100%;	
+}
+.division-list-item-content{
+	float: left;
+    width: 100%;
+    padding: 3px 58px 3px 55px;
+    margin-left: -50px;
+}
+.division-list-item-edit{
+	float:left;	
+	margin: 5px 0px 0px -43px;
+}
+.division-list-item-edit span{
+	float:left;	
+}
+.division-list-item-gauge{
+	border: 1px solid#EEE;
+    height: 6px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    float: left;
+}
+.division-list-item-gauge div{
+	height:5px;
+	float:left;	
+}
+.division-list-item-name{
+	float:left;	
+	font-size: 16px
+}
+.division-list-item-value{
+	float:right;
+	font-size: 12px;	
+}
+#division_productores .smartTableFields{
+	width:225px;	
+}
+
+#division_productores_tableContainer .smartTableBtnArea{
+	width:auto;
+}
+
+/*Divisiond e productores ------------------------------------------*/
+.productor-division-total{
+	font-size: 22px;
+    text-align: center;	
+}
+.productor-division{
+	height: 378px;
+    width: 360px;	
+	overflow-y:auto;
+}
+.productor-division *{
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.divisionProd-list-item{
+	width: 100%;
+    height: 50px;
+    margin: 5px 0px 5px 0px;
+    padding: 2px;
+    border: 1px solid #EEE;	
+	cursor:pointer;
+	
+	-moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+}
+.divisionProd-list-item:hover{
+	background-color:#EEE;
+	
+	-moz-box-shadow:    1px 1px 11px 0px #555;
+   -webkit-box-shadow: 1px 1px 11px 0px #555;
+   box-shadow:         1px 1px 11px 0px #555;	
+   
+}
+.divisionProd-list-item.selected{
+	background-color:#ACD0EF;
+}
+.divisionProd-list-item-color{
+	width: 50px;
+    height: 44px;
+	float:left;
+}
+.divisionProd-list-item-color span{
+	font-size: 29px;
+    padding-top: 6px;
+    float: left;
+    text-align: center;
+    width: 100%;	
+}
+.divisionProd-list-item-content{
+	float: left;
+    width: 100%;
+    padding: 3px 58px 3px 55px;
+    margin-left: -50px;
+}
+.divisionProd-list-item-edit{
+	float: left;
+    margin: 5px 0px 0px -43px;
+    margin-left: -55px;
+}
+.divisionProd-list-item-edit span{
+	float:left;	
+}
+.divide-input{
+	width: 51px;
+    font-size: 19px !important;
+    padding: 4px 3px 4px 4px !important;
+}
+.divisionProd-list-item-gauge{
+	border: 1px solid#EEE;
+    height: 6px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    float: left;
+}
+.divisionProd-list-item-gauge div{
+	height:5px;
+	float:left;	
+}
+.divisionProd-list-item-name{
+	float:left;	
+	font-size: 16px
+}
+.divisionProd-list-item-value{
+	float:right;
+	font-size: 12px;	
+}
+#divisionProd_productores .smartTableFields{
+	width:225px;	
+}
+
+#divisionProd_productores_tableContainer .smartTableBtnArea{
+	width:auto;
+}
+.divide-input{
+	width:150px:
+	font-size:15px;	
+}
+.division-container #division_productores .smartTableBtnArea *,#viewcharge_division_list .smartTableBtnArea *{
+	float:right;	
+} 
+
+/* Oculta y presenta los botones del listado de productores    */
+.division-container #division_productores .workloadForm-add{
+	display:none;	
+}
+.division-container #division_productores[userselected=true] .workloadForm-add{
+	display:block;
+}
+
+/* vista de division de cargas   */
+.division-list-item-color{
+	background-color:EEE;
+	border:1px solid #CCC;
+}
+.viewcharge-division{
+	position:absolute;
+	width: 378px;
+    height: 401px;
+}	
+.division-list-item-color span{
+	font-size: 13px;
+    padding-top: 11px;
+    float: left;
+    text-align: right;
+    width: 100%;
+    padding-right: 3px;
+}
+.divisionProd-list-item-color{
+	background-color:EEE;
+	border:1px solid #CCC;
+}
+.divisionProd-list-item-color span{
+	font-size: 13px;
+    padding-top: 11px;
+    float: left;
+    text-align: right;
+    width: 100%;
+    padding-right: 3px;
+}

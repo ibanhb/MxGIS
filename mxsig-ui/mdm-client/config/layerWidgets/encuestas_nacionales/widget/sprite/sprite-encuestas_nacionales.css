@@ -1,0 +1,365 @@
+@charset "utf-8";
+	.sprite-encuestas_nacionales-grid:hover
+{
+	background-image : url(sprite-cwidgetbase-grid--hover.png);
+	background-repeat : no-repeat;
+	width : 28px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-globe
+{
+	background-image : url(sprite-cwidgetbase-globe.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-globe:hover
+{
+	background-image : url(sprite-cwidgetbase-globe--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-grid
+{
+	background-image : url(sprite-cwidgetbase-grid.png);
+	background-repeat : no-repeat;
+	width : 28px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-doc-csv:hover
+{
+	background-image : url(sprite-cwidgetbase-doc-csv--hover.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-doc-pdf:hover
+{
+	background-image : url(sprite-cwidgetbase-doc-pdf--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-doc-pdf-mini:hover
+{
+	background-image : url(sprite-cwidgetbase-doc-pdf-mini--hover.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-graph-mini:hover
+{
+	background-image : url(sprite-cwidgetbase-graph-mini--hover.png);
+	background-repeat : no-repeat;
+	width : 28px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-doc-xls:hover
+{
+	background-image : url(sprite-cwidgetbase-doc-xls--hover.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-modify:hover
+{
+	background-image : url(sprite-cwidgetbase-modify--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-sclose
+{
+	background-image : url(sprite-cwidgetbase-sclose.png);
+	background-repeat : no-repeat;
+	width : 18px;
+	height : 18px;
+}
+.sprite-encuestas_nacionales-sdown
+{
+	background-image : url(sprite-cwidgetbase-sdown.png);
+	background-repeat : no-repeat;
+	width : 18px;
+	height : 18px;
+}
+.sprite-encuestas_nacionales-sdown:hover
+{
+	background-image : url(sprite-cwidgetbase-sdown--hover.png);
+	background-repeat : no-repeat;
+	width : 18px;
+	height : 18px;
+}
+.sprite-encuestas_nacionales-sleft
+{
+	background-image : url(sprite-cwidgetbase-sleft.png);
+	background-repeat : no-repeat;
+	width : 18px;
+	height : 18px;
+}
+.sprite-encuestas_nacionales-sleft:hover
+{
+	background-image : url(sprite-cwidgetbase-sleft--hover.png);
+	background-repeat : no-repeat;
+	width : 18px;
+	height : 18px;
+}
+.sprite-encuestas_nacionales-info
+{
+	background-image : url(sprite-cwidgetbase-info.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-ok:hover
+{
+	background-image : url(sprite-cwidgetbase-ok--hover.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-circle
+{
+	background-image : url(sprite-cwidgetbase-circle.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-ok
+{
+	background-image : url(sprite-cwidgetbase-ok.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-sright
+{
+	background-image : url(sprite-cwidgetbase-sright.png);
+	background-repeat : no-repeat;
+	width : 18px;
+	height : 18px;
+}
+.sprite-encuestas_nacionales-bback
+{
+	background-image : url(sprite-cwidgetbase-bback.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-info:hover
+{
+	background-image : url(sprite-cwidgetbase-info--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-doc-csv
+{
+	background-image : url(sprite-cwidgetbase-doc-csv.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-doc-pdf
+{
+	background-image : url(sprite-cwidgetbase-doc-pdf.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-graph-mini
+{
+	background-image : url(sprite-cwidgetbase-graph-mini.png);
+	background-repeat : no-repeat;
+	width : 28px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-ok-nm:hover
+{
+	background-image : url(sprite-cwidgetbase-ok-nm--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-ok-nm
+{
+	background-image : url(sprite-cwidgetbase-ok-nm.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-bback:hover
+{
+	background-image : url(sprite-cwidgetbase-bback--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-forward
+{
+	background-image : url(sprite-cwidgetbase-forward.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-geo
+{
+	background-image : url(sprite-cwidgetbase-geo.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-doc-pdf-mini
+{
+	background-image : url(sprite-cwidgetbase-doc-pdf-mini.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-graph
+{
+	background-image : url(sprite-cwidgetbase-graph.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-vars:hover
+{
+	background-image : url(sprite-cwidgetbase-vars--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-binfo
+{
+	background-image : url(sprite-cwidgetbase-binfo.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-modify
+{
+	background-image : url(sprite-cwidgetbase-modify.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-vars
+{
+	background-image : url(sprite-cwidgetbase-vars.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-ok-m
+{
+	background-image : url(sprite-cwidgetbase-ok-m.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-doc-xls
+{
+	background-image : url(sprite-cwidgetbase-doc-xls.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-bdown
+{
+	background-image : url(sprite-cwidgetbase-bdown.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-ok-m:hover
+{
+	background-image : url(sprite-cwidgetbase-ok-m--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-down:hover
+{
+	background-image : url(sprite-cwidgetbase-down--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-graph:hover
+{
+	background-image : url(sprite-cwidgetbase-graph--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-down
+{
+	background-image : url(sprite-cwidgetbase-down.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-geo:hover
+{
+	background-image : url(sprite-cwidgetbase-geo--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-bup:hover
+{
+	background-image : url(sprite-cwidgetbase-bup--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-binfo:hover
+{
+	background-image : url(sprite-cwidgetbase-binfo--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-bdown:hover
+{
+	background-image : url(sprite-cwidgetbase-bdown--hover.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-bup
+{
+	background-image : url(sprite-cwidgetbase-bup.png);
+	background-repeat : no-repeat;
+	width : 40px;
+	height : 40px;
+}
+.sprite-encuestas_nacionales-sclose:hover
+{
+	background-image : url(sprite-cwidgetbase-sclose--hover.png);
+	background-repeat : no-repeat;
+	width : 18px;
+	height : 18px;
+}
+.sprite-encuestas_nacionales-sright:hover
+{
+	background-image : url(sprite-cwidgetbase-sright--hover.png);
+	background-repeat : no-repeat;
+	width : 18px;
+	height : 18px;
+}
+.sprite-encuestas_nacionales-circle:hover
+{
+	background-image : url(sprite-cwidgetbase-circle--hover.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}
+.sprite-encuestas_nacionales-forward:hover
+{
+	background-image : url(sprite-cwidgetbase-forward--hover.png);
+	background-repeat : no-repeat;
+	width : 27px;
+	height : 27px;
+}

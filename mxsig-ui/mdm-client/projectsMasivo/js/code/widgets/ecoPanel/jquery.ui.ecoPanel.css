@@ -1,0 +1,207 @@
+@import url("widget_ecoPanel.css");
+.cw-boxBorder{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.cw-shadow{
+	-webkit-box-shadow: 1px 1px 4px 1px #808080;
+	box-shadow: 1px 1px 4px 1px #808080;	
+}
+.custom-ecoPanel{
+	/*float:left;
+	width:290px;
+	height: auto;
+	padding: 5px*/;
+	font-size:160%;
+}
+/*sprites*/
+.ecoPanel-sprite{background-image: url(sprite.png);background-repeat: no-repeat;}
+
+/*----------------------*/
+.ecoPanel-shadow{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+}
+
+.ecoPanel-shadow-inset{
+   -moz-box-shadow: inset 1px 1px 2px 0px #999;
+   -webkit-box-shadow: inset 1px 1px 2px 0px #999;
+   box-shadow: inset 1px 1px 2px 0px #999;
+}
+.ecoPanel-boxsize{
+   -moz-box-shadow:    1px 1px 2px 0px #555;
+   -webkit-box-shadow: 1px 1px 2px 0px #555;
+   box-shadow:         1px 1px 2px 0px #555;
+   
+   /* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#555555');
+}
+
+.ecoPanel-transition{
+    webkit-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -o-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -moz-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -ms-transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+    -kthtml-transition: all 0.4s lcubic-bezier(0.52,0,0.48,1);
+    transition: all 0.4s cubic-bezier(0.52,0,0.48,1);
+}
+/*Local widget*/
+.ecoPanel-charge-display{
+	width:100%;
+	color:#000;
+	height:12px;
+	text-align:right;
+	padding-right:3px;
+	
+	display:none;
+}
+.ecoPanel-carga{
+	background-color:#809b20;;
+	height:32px;
+	float:left;
+	color:#FFF;
+	
+	font-size:200%;
+	padding-top:2px;
+	padding-bottom:2px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.ecoPanel-carga-progress{
+	background-color:#97BE0C;
+	height:100%;
+	float:left;
+	font-size:55%;
+	
+	padding-top: 6px;
+	padding-left: 3px;
+}
+.ecoPanel-promedio{
+	background-color:#0a71b4;
+	height:12px;
+	float:left;
+	color:#FFF;
+	
+	display:none;
+}
+.ecoPanel-promedio-progress{
+	background-color:#38a9db;
+	height:100%;
+	float:left;
+	font-size:55%;
+}
+
+.ecoPanel-color{
+	position:absolute;
+	width: 10px;
+	height: 76px;
+	/*background-color:#5994D5;*/
+}
+.ecoPanel-info-content{
+	float: left;
+	width: 100%;
+	height: 40px;
+	padding-left: 14px;
+}
+.ecoPanel-rankName{
+	overflow:hidden;
+	font-size:90%;
+	width:150px;
+	font-weight:bold;	
+}
+.ecoPanel-info-text{
+	float:left;
+	max-width: 180px;
+	height: auto;
+}
+.ecoPanel-zone{
+	float:left;
+	width:100%;
+	margin-left:-3px;
+}
+.ecoPanel-zone-icon{
+	float: left;
+	margin-top:-2px;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+}
+.ecoPanel-zone-name{
+	float: left;
+	margin-top:-1px;
+	height: 27px;
+	width: 130px;
+	font-size: 90%;
+	overflow: hidden;
+	line-height: 90%;
+}
+.ecoPanel-info-graph{
+	float:right;
+	width: 120px;
+	height: 41px;
+	overflow:hidden;
+}
+.ecoPanel-tools{
+	float: left;
+	width: 287px;
+	padding-left: 12px;
+	overflow:hidden;
+}
+.ecoPanel-act{
+	float: left;
+	max-width: 205px;
+	height: 35px;
+	overflow: hidden;	
+}
+.ecoPanel-act-num{
+	position:absolute;
+	width: 35px;
+	height: 35px;
+	font-size: 120%;
+	padding-left: 12px;
+	padding-top: 7px;
+}
+.ecoPanel-act-toolbar{
+	float: left;
+	margin-top: 4px;
+	height: 28px;
+	background-color: #DDD;
+	margin-left: 26px;
+	padding-left: 12px;
+	width: 179px;
+	min-height: 28px;
+	overflow:hidden;
+}
+.ecoPanel-act-des{
+	float: left;
+	height: 28px;
+	width: 135px;
+	min-height: 28px;
+	overflow:hidden;
+}
+.ecoPanel-act-title{
+	font-size:70%;
+}
+.ecoPanel-act-name{
+	font-size: 80%;
+	margin-top: -2px;
+	font-weight: bold;	
+}
+.ecoPanel-act-tools{
+	float:right;
+	margin-top:4px;
+}
+.ecoPanel-act-tools *{
+  float:left;
+  cursor:pointer;	
+}
+.ecoPanel-act-end{
+	float:right;
+	cursor:pointer;
+}

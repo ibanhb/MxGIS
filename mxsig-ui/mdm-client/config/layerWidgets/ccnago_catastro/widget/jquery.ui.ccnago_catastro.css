@@ -1,0 +1,1248 @@
+@import url('sprite/sprite-ccnago_catastro.css');
+/* CSS Document */
+.custom-ccnago_catastro{
+	font-family:Arial, Helvetica, sans-serif;
+	width:387px;
+	height: auto;
+	border: 1px solid #EEE;
+	z-index: 1900;
+	
+	position:absolute;
+	bottom:55px;
+	left:11px;
+	
+	overflow: hidden;
+	
+	display:block;
+	background-color:#FFF;
+	
+	-webkit-box-shadow: 1px 1px 2px 0px #555;
+	box-shadow: 1px 1px 2px 0px #555;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#ccnago_catastro_header_click_collapsed{
+	display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 106px;
+    width: 345px;
+}
+
+.custom-ccnago_catastro[collapsed=false][seltab=info][infopanel=graph],.custom-ccnago_catastro[collapsed=false][seltab=info][infopanel=tab]{
+	width:630px;
+}
+.custom-ccnago_catastro[collapsed=true] #ccnago_catastro_header_click_collapsed{
+	display: block;
+}
+.ccnago_catastro-animated{
+    -webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+/* Spinner  ---------------------*/
+.ccnago_catastro-logo-left{ 
+	background:url("logo.png") top left no-repeat; 
+	float: left;
+    width: 70px;
+    height: 60px;
+}
+.ccnago_catastro-spinner-panel{
+	position: absolute;
+	z-index: 100;
+}
+.ccnago_catastro-spinner-image{
+	background-image:url(spinner_points.GIF);
+	background-repeat: no-repeat;
+	width: 99px;
+	height: 9px;
+}
+.ccnago_catastro-block-overlay{
+	position: absolute;
+}
+.ccnago_catastro-spinner-image-container{
+	position: absolute;
+	top:50%;
+	left: 50%;
+}
+.ccnago_catastro-spinner-image{
+    float: left;
+    margin-left: -50%;
+}
+
+/*----------------------*/
+
+
+.ccnago_catastro-header{
+	float:left;	
+	float: left;
+    padding-bottom: 3px;
+	min-height: 108px;
+	width:100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.custom-ccnago_catastro[collapsed=true] .ccnago_catastro-header{
+	cursor: pointer;
+}
+.ccnago_catastro-info-content{
+	display: none;
+}
+.ccnago_catastro-info-graph{
+	display: none;
+}
+.ccnago_catastro-info-tabulated{
+	display: none;
+}
+
+.custom-ccnago_catastro[infopanel=data] .ccnago_catastro-info-content{
+	display: block;
+}
+.custom-ccnago_catastro[infopanel=graph] .ccnago_catastro-info-graph{
+	display: block;
+}
+
+.custom-ccnago_catastro[infopanel=tab] .ccnago_catastro-info-tabulated{
+	display: block;
+}
+
+
+#ccnago_catastro_header_title{
+	float: left;
+	padding: 4px 55px 4px 75px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-left: -70px;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#ccnago_catastro_var_title{
+    font-weight: bold;
+}
+#ccnago_catastro_subvar_title{
+	font-size: 11px;
+	max-height: 60px;
+}
+.ccnago_catastro-truncate-text{
+	padding:4px;
+	font-size:12px;	
+}
+.ccnago_catastro-header-btn{
+	float:right;
+	cursor:pointer;	
+}
+.ccnago_catastro-header-btns{
+	width: 55px;
+	float: right;
+    cursor: pointer;
+    margin-left: -55px;
+}
+.ccnago_catastro-header-colors{
+	float:right;
+    width: 100%;
+    height: 25px;
+	padding:4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ccnago_catastro-header-colors div{
+	float:left;
+	height:20px;
+}
+
+#ccnago_catastro_header_btnRight_modify{	display: none;}
+#ccnago_catastro_header_btnRight_ok_nm{display: none;}
+#ccnago_catastro_header_btnRight_ok_n{display: none;}
+.ccnago_catastro-header-btnRight-close{float: right}
+
+.custom-ccnago_catastro[collapsed=true] #ccnago_catastro_header_btnRight_modify{
+	display: block;	
+}
+.custom-ccnago_catastro[collapsed=false][changed=false] #ccnago_catastro_header_btnRight_ok_nm{
+	display: block;	
+}
+.custom-ccnago_catastro[collapsed=false][changed=true] #ccnago_catastro_header_btnRight_ok_n{
+	display: block;	
+}
+.custom-ccnago_catastro[collapsed=false][changed=true] .ccnago_catastro-header-btnRight-close{
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+
+.ccnago_catastro-container{
+    float:right;
+	width:100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-geo-container{
+	float:right;
+	width:100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ccnago_catastro-info-content{
+	float:right;
+	width:100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-info-tabulated{
+	float:right;
+	width:100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-info-graph{
+	
+}
+
+.ccnago_catastro-info-tab{
+	float:right;
+	width:100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ccnago_catastro-info-graph-container{
+	width: 100%;
+    height: 325px;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+.ccnago_catastro-info-tabulador-container{
+	width: 100%;
+    height: 325px;
+}
+.ccnago_catastro-bk-btn{
+	width:0px;
+	height:349px;
+	background:#DFDFDF;		
+	float:left;
+	cursor:pointer;
+	
+	overflow:hidden;
+}
+.ccnago_catastro-bk-btn-icon{
+	float: left;
+    margin-top: 146px;
+	cursor:pointer;
+}
+.ccnago_catastro-content{
+	width: 325px;
+	height:330px;	
+	padding:4px;
+	float:right;
+	overflow-y: auto;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-panels-container{
+	float: right;
+    width: 100%;
+    margin-left: -60px;
+    padding-left: 60px;
+	
+	height: 350px;
+    overflow: hidden;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-toolbar-container{
+	float: left;
+	width: 60px;
+	height: 350px;
+	background-color: #EFEFEF;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-list-item{
+	width:100%;
+	padding:5px;
+	float:left;
+	font-size: 12px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	border-bottom:1px solid #999;
+}
+.ccnago_catastro-list-item label{
+	width:100%;
+	padding-right:56px;	
+	float:left;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-item-check{
+	float:left;	
+	margin-left: -54px;
+	cursor:pointer;
+}
+
+/*Geo ----------------------*/
+.ccnago_catastro-geo-content{
+	width: 100%;
+    height: 353px;
+    padding: 4px;
+    float: right;
+	overflow-y: auto;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-geo-type{
+	float: left;
+	width: 295px;
+	height: 25px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-geo-bk-btn{
+	    width: 0px;
+		height: 349px;
+		background: #DFDFDF;
+		float: left;
+		cursor: pointer;
+		overflow: hidden;
+}
+.ccnago_catastro-geo-bk-btn{
+	width: 0px;
+    height: 349px;
+    background: #DFDFDF;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+}
+.ccnago_catastro-geoEdo-item{
+	width:100%;
+	float:left;
+  	padding: 3px;
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+	cursor:pointer;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+.ccnago_catastro-geoEdo-icon{
+	width: auto;
+	height: auto;
+	float: left;
+	margin-left: -60px;
+	
+}
+.ccnago_catastro-geoEdo-icon-sel{
+	display:block;	
+}
+.ccnago_catastro-geoEdo-icon-unsel{
+	display:none;	
+}
+
+.ccnago_catastro-geoEdo-item[selected=selected] .ccnago_catastro-geoEdo-icon-unsel{
+	display: block;
+}
+.ccnago_catastro-geoEdo-item[selected=selected] .ccnago_catastro-geoEdo-icon-sel{
+	display: none;
+}
+
+
+.ccnago_catastro-geoEdo-item-label{
+	float: left;
+    width: 100%;
+    padding: 6px 60px 6px 4px;
+    /*margin-left: -29px;*/
+    box-sizing: border-box;
+}
+.ccnago_catastro-geo-seemore{
+	float: left;
+    padding-right: 5px;
+    margin-left: -35px;
+}
+.ccnago_catastro-geo-bk-btn-icon {
+    float: left;
+    margin-top: 146px;
+    cursor: pointer;
+}
+
+.ccnago_catastro-geo-container[parent=true] .ccnago_catastro-geo-bk-btn {
+    width: 25px;
+	position: relative;
+}
+.ccnago_catastro-geo-container[parent=true] .ccnago_catastro-geo-content {
+    margin-left: -27px;
+    padding-left: 34px;
+}
+
+/* Fin Geo list */
+
+
+.ccnago_catastro-item-forward{
+	float:left;	
+	margin-left: -30px;
+	cursor:pointer;
+}
+.ccnago_catastro-strat-method{
+	float:left;
+	width:100%;
+	height:38px;
+	padding:5px;
+	font-size:12px;
+	overflow: hidden;
+	
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-strat-method .ccnago_catastro-strat-item{
+	float:left;
+	width:99%;
+	text-align:center;
+	background:#e4aca0;
+	padding:4px;
+	margin: 2px 2px 2px 2px;
+	/*cursor:pointer;*/
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.ccnago_catastro-strat-item:hover{
+	background:#B19C9C;
+}
+.ccnago_catastro-strat-item.selected{
+	background:#e4aca0;
+}
+
+.ccnago_catastro-years{
+	float:left;
+	width:100%;
+	height:37px;
+	padding:5px;
+	font-size:12px;
+	overflow: hidden;
+	
+	border-bottom:1px solid #999;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.ccnago_catastro-years div{
+	float:left;
+	width:24%;
+	text-align:center;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.ccnago_catastro-years-item{
+	text-align:center;
+	background:#F0F0F0;
+	padding:4px;
+	margin: 2px 2px 2px 2px;
+	/*cursor:pointer;*/	
+}
+.ccnago_catastro-years-item:hover{
+	/*background:#e8d2d6;*/	
+}
+.ccnago_catastro-years-item.selected{
+	background:#C6DFD1;	
+}
+
+/* Control de visualización de paneles -------------------------*/
+.custom-ccnago_catastro[collapsed=true] .ccnago_catastro-panels-container{
+	height:0px;
+	overflow: hidden;
+}
+.custom-ccnago_catastro[collapsed=true] .ccnago_catastro-toolbar-container{
+	height:0px;
+	overflow: hidden;
+}
+
+
+.custom-ccnago_catastro[collapsed=true] .ccnago_catastro-container{
+	height:0px;
+	overflow: hidden;
+}
+/*.custom-ccnago_catastro[collapsed=true] .ccnago_catastro-strat-method{
+	height:0px;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+}
+.custom-ccnago_catastro[collapsed=true] .ccnago_catastro-years{
+	height:0px;
+	padding: 0px;
+	border: 0px;
+	overflow: hidden;
+}
+*/
+
+.custom-ccnago_catastro[collapsed=false] .ccnago_catastro-header-colors{
+	display:none;
+}
+
+
+/* animacion de boton back  -----------------------------------*/
+.ccnago_catastro-container[parent=true] .ccnago_catastro-bk-btn{
+	width:25px;
+}
+.ccnago_catastro-container[parent=true] .ccnago_catastro-content{
+	margin-left: 0px;
+    padding-left: 0px;
+	width: 298px;
+}
+
+/*Logo --------------------------------------------------------*/
+
+/* Tabs    */
+.ccnago_catastro-tab{
+	cursor: pointer;
+    background-position: 9px 0px;
+	margin: 4px 0px 4px 0px;
+    width: 100% !important;
+	text-align: center;
+	padding: 2px 0px 2px 0px;
+	
+}
+.ccnago_catastro-tab:hover{
+	background-color: #e8d2d6;
+}
+.ccnago_catastro-tab div:first-of-type{
+	margin-left: 9px;
+}
+
+.custom-ccnago_catastro[seltab=var] #ccnago_catastro_tab_vars{
+	background-color: #deb9b9;
+}
+.custom-ccnago_catastro[seltab=geo] #ccnago_catastro_tab_geo{
+	background-color: #deb9b9;
+}
+.custom-ccnago_catastro[seltab=graph] #ccnago_catastro_tab_graph{
+	background-color: #deb9b9;
+}
+
+.custom-ccnago_catastro[seltab=info] #ccnago_catastro_tab_info{
+	background-color: #deb9b9;
+}
+
+.ccnago_catastro-ccnago_catastro_card_values{
+	display: none;
+	float: right;
+}
+
+.ccnago_catastro-tab-container{
+	display: none;
+}
+
+.custom-ccnago_catastro[seltab=var] .ccnago_catastro-container{
+	display: block;
+}
+.custom-ccnago_catastro[seltab=geo] .ccnago_catastro-geo-container{
+	display: block;
+}
+.custom-ccnago_catastro[seltab=graph] .ccnago_catastro-conf-container{
+	display: block;
+}
+.custom-ccnago_catastro[seltab=info] .ccnago_catastro-info-container{
+	display: block;
+}
+.custom-ccnago_catastro[seltab=tab] .ccnago_catastro-info-tabulated{
+	display: block;
+}
+
+
+.custom-ccnago_catastro[cantheme=false] .ccnago_catastro-tab-container{
+	display: none;
+}
+.custom-ccnago_catastro[cantheme=false] .ccnago_catastro-geo-container{
+	display: block;
+}
+
+
+.ccnago_catastro-disable-toolbars{
+	position: absolute;
+	left: 0px;
+    top: 125px;
+    width: 60px;
+    height: 250px;
+    background-color: rgba(255,255,255,0.4);
+	display: none;
+}
+.custom-ccnago_catastro[cantheme=false] .ccnago_catastro-disable-toolbars{
+	display: block;
+}
+
+.ccnago_catastro-geo-type .ccnago_catastro-geoType-item.selected{
+	background:#deb9b9;
+	border: 2px solid #57867B;
+}
+.ccnago_catastro-strat-item-selector{
+	float: left;
+	height:auto;
+	padding: 2px 2px 2px 2px;
+	margin-right: 2px;
+	border:1px solid #CFCFCF;
+	cursor: pointer;
+	text-align: center;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.ccnago_catastro-strat-item-selector.selected{
+	background: #d8a48b;
+	border:1px solid #CFCFCF;
+	border-bottom: 2px solid #4E4E4E;
+}
+.ccnago_catastro-strat-item-selector label{
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+.ccnago_catastro-strat-selector-color{
+	width: 100%;
+	height: 5px;
+	float: left;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+.ccnago_catastro-strat-table{
+	width: 100%;
+	font-size: 11px;
+}
+.ccnago_catastro-strat-table tr:nth-child(even) {
+	background: #E4E4E4;
+}
+.ccnago_catastro-strat-table tr{
+	display: none;
+}
+.ccnago_catastro-strat-table[strat=e1] tr[idstrat=e1]{
+	display: table-row;
+	width: 100%;
+}
+.ccnago_catastro-strat-table[strat=e2] tr[idstrat=e2]{
+	display: table-row;
+	width: 100%;
+}
+.ccnago_catastro-strat-table[strat=e3] tr[idstrat=e3]{
+	display: table-row;
+	width: 100%;
+}
+.ccnago_catastro-strat-table[strat=e4] tr[idstrat=e4]{
+	display: table-row;
+	width: 100%;
+}
+.ccnago_catastro-strat-table[strat=e5] tr[idstrat=e5]{
+	display: table-row;
+	width: 100%;
+}
+.ccnago_catastro-strat-table td{
+	padding: 5px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+
+.ccnago_catastro-strat-table .ccnago_catastro-table-head{
+	display: table-row;
+	font-size: 12px;
+    font-weight: bold;
+    background-color: #e4aca0;
+}
+
+.ccnago_catastro-strat-table-container{
+	width: 100%;
+	height: 298px;
+	overflow-y: auto;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.ccnago_catastro-info-var-icon{
+	float:left;
+	cursor: pointer;
+}
+.ccnago_catastro-geotype-item{
+	padding: 2px 4px 2px 4px;
+	margin: 3px 2px 0px 4px;
+	width: auto;
+	float: left;
+	font-size: 14px;
+	
+	cursor: pointer;
+}
+.ccnago_catastro-geotype-item:hover{
+	background:#DDDDDD;
+}
+
+.ccnago_catastro-geotype-item.selected{
+	background:#deb9b9;	
+}
+.ccnago_catastro-header-colors-years-label{
+	width: 100%;
+	float: left;
+	height: 16px !important;
+	
+}
+.ccnago_catastro-header-year-label-left{
+	float: left;
+	padding-left: 2px;
+	height: 13px !important;
+	border-left: 1px solid;
+}
+
+.ccnago_catastro-header-year-label-right{
+	float: right !important;
+	height: 13px !important;
+	padding-right: 2px;
+	border-right: 1px solid;
+}
+
+.ccnago_catastro-strats-currentRamps-container{
+	float: left;
+	width: 100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.ccnago_catastro_strats_currentRamp{
+	float:left;
+	width:100%;
+}
+.ccnago_catastro-strats-colorRamp{
+	float: left;
+    width: 16%;
+    padding: 1px 1px 1px 1px;
+	border: 2px solid #FFF;
+	cursor:pointer;
+	margin-top: 2px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-strats-colorRamp:hover{
+	border: 3px solid #BBB;
+}
+
+.ccnago_catastro-strats-currentRamps-container .ccnago_catastro-strats-colorRamp[selected=selected]{
+	border: 3px solid #deb9b9}
+
+.ccnago_catastro-strats-ramp-color{
+	height:16px;
+	float:left;	
+}
+
+.ccnago_catastro-theme-normalInfo{
+	float:left;
+	width:48%;
+	padding:0px 3px 10px 6px;
+	font-size:12px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-theme-mainInfo{
+	float:right;
+	width:48%;
+	padding:0px 3px 10px 6px;
+	font-size:12px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ccnago_catastro-theme-info label{
+	float: right;
+}
+.ccnago_catastro-strats-transparency-container{
+	float:left;
+	width:97%;
+	padding:4px;
+	background-color:#FFF;	
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-export-type-item{
+	float: left;
+	cursor: pointer;
+}
+.ccnago_catastro-metadata-frame{
+	border: none;
+	
+}
+.ccnago_catastro-graph-strat{
+	width: 323px;
+	height: auto;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* estrato infomacion detalle */
+.ccnago_catastro-stratum-detail-item{
+	width: 49%;
+    height: 29px;
+    float: left;
+	font-size: 12px;
+    
+	padding: 2px;
+	border: 1px solid #EEE;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-stratum-detail-item-color{
+	width: 30px;
+	height: 23px;
+	float: left;
+	
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-stratum-detail-item-info{
+	width: 100%;
+	height: 30px;
+    float: left;
+    padding-left: 35px;
+    margin-left: -30px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-stratum-detail-item-info-vals{
+	float: left;
+	width: 100%;
+	height: 13px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-stratum-detail-item-info-label{
+	float: left;
+}
+.ccnago_catastro-stratum-detail-item-info-value{
+	float: right;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-geo-content-options{
+	float: left;
+	height: 20px;
+	font-size: 13px;
+	display: none;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.ccnago_catastro-geo-content-options div{
+	cursor: pointer;
+	padding: 2px 4px 2px 4px;
+	float: left;
+	margin: 0px 2px 0px 2px;
+	
+	border-right: 1px solid #DDD;
+}
+.ccnago_catastro-geo-content-options div:last-child{
+	border-right: 0px solid #DDD;
+}
+.ccnago_catastro-geo-content-options div:hover{
+	background-color: #e8d2d6;	
+}
+.ccnago_catastro-tool-option{
+	background-color: #ECECEC;
+}
+.custom-ccnago_catastro[geotype="edo"] .ccnago_catastro-geo-content-options{
+	display: block;
+}
+.ccnago_catastro-container[typeselection=edomun] div[idref=edomun]{
+	background-color: #deb9b9;
+}
+.ccnago_catastro-container[typeselection=edo] div[idref=edo]{
+	background-color: #deb9b9;
+}
+.ccnago_catastro-container[typeselection=mun] div[idref=mun]{
+	background-color: #deb9b9;
+}
+
+/*.custom-ccnago_catastro[geotype="edo"] .ccnago_catastro-geo-content{
+	height: 320px;
+}*/
+.ccnago_catastro-tab-bottom-container{
+	position: absolute;
+    bottom: 0px;
+    width: 60px;
+	display: none;
+	opacity: 0;
+	
+}
+.ccnago_catastro-tab-bottom-container div{
+	cursor: pointer;
+    background-position: 9px 0px;
+    margin: 4px 0px 4px 0px;
+    width: 100% !important;
+}
+.custom-ccnago_catastro[collapsed="false"] .ccnago_catastro-tab-bottom-container{
+	display: block;
+	opacity: 1;
+}
+.ccnago_catastro-confiden-bg{
+	background-image: url(d_reservados.jpg);
+}
+.ccnago_catastro-confiden-bg-no{
+	background-image: url(d_reservados_no.png);
+}
+
+.ccnago_catastro-strats-strat-title{
+	width:25%;
+	float:left;
+	padding:0px 0px 0px 4px;
+}
+
+
+.ccnago_catastro-strats-data-config-strats{
+	width:100%;
+	float:left;
+	padding:4px;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-strats-strat-item{
+	width:18%;
+	height:22px;
+	margin:1%;
+	text-align:center;
+	float:left;
+	padding:3px 4px 3px 4px;
+	font-size: 13px;
+	border:1px solid #AAA;
+	cursor:pointer;
+		
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-strats-strat-item:hover{
+	background-color:#EEE;
+}
+.ccnago_catastro-strats-strat-item.selected{
+	background-color:#deb9b9;
+}
+
+.ccnago_catastro-strats-data-container{
+	float:left;
+	width:100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* Card -------------------------------------------------------------------------------------------------------*/
+.ccnago_catastro-table-color thead{
+	background: #ad8268;
+}
+.ccnago_catastro-table-color{
+	width: 100%;
+	font-size: 11.5px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-table-color td{
+	padding: 4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-table-color tr:nth-child(even) {
+	background: #d4bcb4;
+}
+##ccnago_catastro_card_indicators{
+	overflow-y: auto;
+}
+
+#ccnago_catastro_card_indicators ul{
+	padding-left: 23px;
+}
+#ccnago_catastro_card_indicators li{
+	list-style: decimal outside;
+	padding: 2px 0px 2px 4px;
+	cursor: pointer;
+	border-left: 4px solid #FFF;
+}
+#ccnago_catastro_card_indicators li *{
+	cursor: pointer;
+}
+#ccnago_catastro_card_indicators li:hover{
+	background: #dfbf9f;
+}
+#ccnago_catastro_card_indicators li.active{
+	border-left: 4px solid #F00;
+}
+#ccnago_catastro_card_indicators li label{
+	
+}
+
+
+#ccnago_catastro_card_header{
+	width: 100%;
+    height: 84px;
+    float: left;
+	overflow-y: auto;
+}
+#ccnago_catastro_card_indicators_container{
+	height: 319px;
+    width: 269px;
+    background-color: #F4F0F0;
+	float:left;
+	overflow: hidden;
+	
+	padding: 10px;
+    font-size: 13px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	overflow-y: auto;
+}
+#ccnago_catastro_card_indicators_closebtn{
+	float: right;
+	clear: both;
+	
+}
+#ccnago_catastro_card_indicators_closebtn *{
+	float:left;	
+}
+#ccnago_catastro_card_indicators{
+	height: 290px;
+    width: 259px;
+    background-color: #F4F0F0;
+	float:left;
+	
+	padding: 10px;
+    font-size: 13px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#ccnago_catastro_card_values{
+	width: 495px;
+    float: right;
+    height: 318px;
+    overflow-y: auto;
+	padding: 0px 4px 0px 4px;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#ccnago_catastro_card_toolbar{
+	float: left;
+    clear: left;
+    padding-top: 6px;
+}
+#ccnago_catastro_card_toolbar div{
+	float: left;
+}
+
+.ccnago_catastro-card-title-indicators{
+	font-size: 14px;
+	font-weight: bold;
+	width: 100%;
+	float: left;
+}
+
+.ccnago_catastro-card-blockcontent{
+	float: left;
+}
+.ccnago_catastro-card-title{
+	font-size: 12px;
+    font-weight: bold;
+    padding: 6px 3px 3px 3px;
+	float: left;
+	clear: both;
+	width: 100%;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ccnago_catastro-switchtograph-btn{
+	float: left;
+	cursor: pointer;
+}
+.ccnago_catastro-switchtodata-btn{
+	float: left;
+	cursor: pointer;
+}
+
+.ccnago_catastro-card-varid{
+	display: inline-block;
+	margin-top: 0px;
+    float: left;
+}
+.ccnago_catastro-card-blockcontent{
+	width: 100%;
+}
+.ccnago_catastro-card-blockcontent table{
+	width: 100%;
+}
+
+#toolccnago_catastro_info_content[status=collapsed] #ccnago_catastro_card_indicators_container{
+	width: 57px;
+}
+#toolccnago_catastro_info_content[status=collapsed] #ccnago_catastro_card_values{
+	width: 708px;
+}
+.sprite-ccnago_catastro-sright, .sprite-ccnago_catastro-sleft{
+	cursor: pointer;
+}
+
+#toolccnago_catastro_info_content .sprite-ccnago_catastro-sright{
+	display: none;
+}
+#toolccnago_catastro_info_content[status=collapsed] .sprite-ccnago_catastro-sright{
+	display: block;
+}
+#toolccnago_catastro_info_content[status=collapsed] .sprite-ccnago_catastro-sleft{
+	display: none;
+}
+
+.geolectoral-card-table-labelcolumn{
+	min-width: 265px;
+}
+.ccnago_catastro-card-export-link-item{
+	float: left;
+	padding: 0px 2px 0px 5px;
+	margin-left: 3px;
+	background-color: #EEE;
+}
+.ccnago_catastro-card-export-link-item *{
+	float: left;
+}
+.ccnago_catastro-card-export-link-item label{
+	margin-top: 6px;
+}
+#ccnago_catastro_geo_type{
+	display: none;
+}
+.ccnago_catastro-info-content-tabulate{
+	width: 570px;
+	height: 323px;
+	overflow: auto;
+	box-sizing: border-box;
+}
+.ccnago_catastro-tabulated-table-content{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.ccnago_catastro-detail-data-row{
+    cursor: pointer;
+}
+#ccnago_catastro_tabulador_table td, #ccnago_catastro_tabulador_table th {
+    border: 0.5px;
+}
+
+#ccnago_catastro_tabulador_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#ccnago_catastro_tabulador_table tr:hover {background-color: #ddd;}
+
+#ccnago_catastro_tabulador_table th {
+    padding-top: 12px;
+    text-align: center;
+    background-color:#e4aca0;
+    color: white;
+    min-width:80px;
+}
+
+.ccnago_catastro-info-grid-container-icons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.ccnago_catastro-info-grid-container-note {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  font-style: oblique;
+  padding: 10px;
+  background-color:#ffffff;
+  text-align: justify;
+}

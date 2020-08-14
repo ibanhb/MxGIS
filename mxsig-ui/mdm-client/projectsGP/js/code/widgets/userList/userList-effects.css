@@ -1,0 +1,113 @@
+/*RED flash*/
+keyframes flashRed {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+	  background-color:#DE634E
+ }
+}
+	
+@-moz-keyframes flashRed {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+  background-color:#DE634E
+ }
+}
+    
+@-webkit-keyframes flashRed {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+  background-color:#DE634E
+ }
+}
+
+
+@keyframes userList-warning{
+from {
+	background-color:#E8E8E8;
+ }
+
+to {
+  background-color:#DE634E
+}
+	/*from {backgroung-color:#CCC !important;}
+	to {backgroung-color:#C30 !important;}*/
+}
+.userList-bg-warning{
+	animation-duration: 2s;
+  	animation-name: flashRed;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	
+	-moz-animation-duration: 2s;
+	-moz-animation-name: flashRed;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	
+  	-webkit-animation-duration: 2s;
+  	-webkit-animation-name: flashRed;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+}
+
+/*green flash*/
+keyframes flashGreen {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+	background-color:#64E855;
+ }
+}
+	
+@-moz-keyframes flashGreen {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+  background-color:#64E855;
+ }
+}
+    
+@-webkit-keyframes flashGreen {
+  from {
+	background-color:#E8E8E8;
+ }
+ to {
+  background-color:#64E855;
+ }
+}
+
+
+@keyframes userList-warning{
+from {
+	background-color:#E8E8E8;
+ }
+
+to {
+  background-color:#64E855;
+}
+	/*from {backgroung-color:#CCC !important;}
+	to {backgroung-color:#C30 !important;}*/
+}
+.userList-bg-ok{
+	animation-duration: 2s;
+  	animation-name: flashGreen;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	
+	-moz-animation-duration: 2s;
+	-moz-animation-name: flashGreen;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:alternate;
+	
+  	-webkit-animation-duration: 2s;
+  	-webkit-animation-name: flashGreen;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+}
